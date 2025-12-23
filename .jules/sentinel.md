@@ -1,0 +1,4 @@
+## 2024-09-06 - Dev Dependency Vulnerability in CI/CD
+**Vulnerability:** A high-severity command injection vulnerability was found in the `glob` package, which was a transitive dependency of `markdownlint-cli`, a `devDependency`.
+**Learning:** This repository's primary attack surface is not in runtime application code, but in the tooling and dependencies used for linting and building the filter lists. A vulnerability in a `devDependency` could be exploited in a CI/CD environment to compromise the build process or steal secrets.
+**Prevention:** The security scan process must include `npm audit` to check all dependencies, including `devDependencies`. Security patches for these dependencies should be applied promptly to mitigate the risk of a supply chain attack.
