@@ -1,4 +1,5 @@
 {
+    "//": "Upgraded markdownlint-cli to 0.47.0 and added overrides to fix security vulnerabilities (GHSA-5j98-mcp5-4vw2, GHSA-mh29-5h37-fv8m)",
     "name": "@adguard/filters",
     "author": "AdGuard Software Ltd.",
     "license": "GPL-3.0-only",
@@ -28,7 +29,10 @@
         "@adguard/aglint": "3.0.0",
         "husky": "^9.1.7",
         "lint-staged": "^16.2.6",
-        "markdownlint": "^0.39.0",
-        "markdownlint-cli": "^0.45.0"
+        "markdownlint": "^0.40.0",
+        "markdownlint-cli": "^0.47.0"
+    },
+    "overrides": {
+        "js-yaml": "^4.1.1"
     }
 }
