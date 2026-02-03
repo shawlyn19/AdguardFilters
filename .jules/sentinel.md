@@ -1,0 +1,4 @@
+## 2026-02-03 - Fixing transitive vulnerabilities with overrides and direct upgrades
+**Vulnerability:** Command injection in `glob` (GHSA-5j98-mcp5-4vw2) and prototype pollution in `js-yaml` (GHSA-mh29-5h37-fv8m).
+**Learning:** Upgrading `markdownlint-cli` to 0.47.0 resolves the `glob` vulnerability because it replaces `glob` with `tinyglobby`. For other transitive dependencies (like `js-yaml` in `@adguard/aglint`), using the `overrides` field in `package.json` is an effective way to force a patched version without waiting for the direct dependency to be updated.
+**Prevention:** Regularly run `npm audit` and use `overrides` for targeted fixes of transitive vulnerabilities when direct upgrades are not available or involve breaking changes. Be careful not to use comments (`//`) inside the `overrides` block as it causes npm errors; place them at the top level of `package.json` instead.
