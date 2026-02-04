@@ -1,5 +1,6 @@
 {
     "name": "@adguard/filters",
+    "//": "Security overrides for js-yaml and brace-expansion vulnerabilities",
     "author": "AdGuard Software Ltd.",
     "license": "GPL-3.0-only",
     "type": "module",
@@ -28,7 +29,11 @@
         "@adguard/aglint": "3.0.0",
         "husky": "^9.1.7",
         "lint-staged": "^16.2.6",
-        "markdownlint": "^0.39.0",
-        "markdownlint-cli": "^0.45.0"
+        "markdownlint": "^0.40.0",
+        "markdownlint-cli": "^0.47.0"
+    },
+    "overrides": {
+        "js-yaml": "4.1.1",
+        "brace-expansion": "2.0.2"
     }
 }
