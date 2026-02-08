@@ -4,7 +4,7 @@
     "license": "GPL-3.0-only",
     "type": "module",
     "engines": {
-        "node": ">=18.0.0"
+        "node": ">=20.0.0"
     },
     "repository": {
         "type": "git",
@@ -14,6 +14,7 @@
         "url": "https://github.com/AdguardTeam/AdguardFilters/issues"
     },
     "homepage": "https://github.com/AdguardTeam/AdguardFilters#readme",
+    "//": "Upgraded dependencies to resolve security vulnerabilities: GHSA-5j98-mcp5-4vw2 (glob), GHSA-mh29-5h37-fv8m (js-yaml), GHSA-v6h2-p8h4-qcjw (brace-expansion).",
     "scripts": {
         "aglint": "aglint",
         "markdownlint": "markdownlint .",
@@ -25,10 +26,13 @@
         "*.md": "markdownlint"
     },
     "devDependencies": {
-        "@adguard/aglint": "3.0.0",
+        "@adguard/aglint": "3.0.2",
         "husky": "^9.1.7",
         "lint-staged": "^16.2.6",
-        "markdownlint": "^0.39.0",
-        "markdownlint-cli": "^0.45.0"
+        "markdownlint": "0.40.0",
+        "markdownlint-cli": "0.47.0"
+    },
+    "overrides": {
+        "js-yaml": "4.1.1"
     }
 }
