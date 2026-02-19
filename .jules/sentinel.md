@@ -1,0 +1,4 @@
+## 2025-05-14 - Node.js Compatibility Inconsistency in Dev Tooling
+**Vulnerability:** Inconsistent Node.js version requirements between project configuration and dev dependencies.
+**Learning:** The project's `package.json` specifies `engines: { node: ">=18.0.0" }`. However, existing dev dependencies like `markdownlint-cli@0.45.0` and `minimatch@10.0.1` already require Node.js 20+. This creates a challenge when attempting to fix vulnerabilities (like GHSA-3ppc-4f35-3m26) that are only patched in versions also requiring Node 20+.
+**Prevention:** Regularly sync the project's `engines` field with the requirements of its development tools and dependencies. If Node 18 support must be maintained, dev dependencies must be capped at versions that still support it, or vulnerabilities must be addressed via backports if available.
