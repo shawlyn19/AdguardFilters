@@ -1,5 +1,6 @@
 {
     "name": "@adguard/filters",
+    "//": "Overrides are used to fix security vulnerabilities in transitive dependencies: GHSA-v6h2-p8h4-qcjw (brace-expansion), GHSA-3ppc-4f35-3m26 (minimatch), GHSA-mh29-5h37-fv8m (js-yaml), GHSA-38c4-r59v-3vqw (markdown-it)",
     "author": "AdGuard Software Ltd.",
     "license": "GPL-3.0-only",
     "type": "module",
@@ -28,7 +29,12 @@
         "@adguard/aglint": "3.0.0",
         "husky": "^9.1.7",
         "lint-staged": "^16.2.6",
-        "markdownlint": "^0.39.0",
-        "markdownlint-cli": "^0.45.0"
+        "markdownlint": "0.40.0",
+        "markdownlint-cli": "0.47.0"
+    },
+    "overrides": {
+        "minimatch": "10.2.2",
+        "js-yaml": "4.1.1",
+        "markdown-it": "14.1.1"
     }
 }
