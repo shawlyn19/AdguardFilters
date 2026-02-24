@@ -14,6 +14,7 @@
         "url": "https://github.com/AdguardTeam/AdguardFilters/issues"
     },
     "homepage": "https://github.com/AdguardTeam/AdguardFilters#readme",
+    "//": "Security fixes: GHSA-3ppc-4f35-3m26",
     "scripts": {
         "aglint": "aglint",
         "markdownlint": "markdownlint .",
@@ -28,7 +29,10 @@
         "@adguard/aglint": "3.0.0",
         "husky": "^9.1.7",
         "lint-staged": "^16.2.6",
-        "markdownlint": "^0.39.0",
-        "markdownlint-cli": "^0.45.0"
+        "markdownlint": "0.40.0",
+        "markdownlint-cli": "0.47.0"
+    },
+    "overrides": {
+        "minimatch": "10.2.2"
     }
 }
