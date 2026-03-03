@@ -14,6 +14,10 @@
         "url": "https://github.com/AdguardTeam/AdguardFilters/issues"
     },
     "homepage": "https://github.com/AdguardTeam/AdguardFilters#readme",
+    "overrides": {
+        "minimatch": "10.2.4",
+        "markdown-it": "14.1.1"
+    },
     "scripts": {
         "aglint": "aglint",
         "markdownlint": "markdownlint .",
@@ -25,10 +29,10 @@
         "*.md": "markdownlint"
     },
     "devDependencies": {
-        "@adguard/aglint": "3.0.0",
+        "@adguard/aglint": "3.0.2",
         "husky": "^9.1.7",
         "lint-staged": "^16.2.6",
-        "markdownlint": "^0.39.0",
-        "markdownlint-cli": "^0.45.0"
+        "markdownlint": "0.40.0",
+        "markdownlint-cli": "0.48.0"
     }
 }
