@@ -14,7 +14,6 @@
         "url": "https://github.com/AdguardTeam/AdguardFilters/issues"
     },
     "homepage": "https://github.com/AdguardTeam/AdguardFilters#readme",
-    "//": "Security overrides for transitive vulnerabilities: GHSA-3ppc-4f35-3m26 (minimatch), GHSA-mh29-5h37-fv8m (js-yaml), GHSA-38c4-r59v-3vqw (markdown-it), GHSA-v6h2-p8h4-qcjw (brace-expansion)",
     "overrides": {
         "minimatch": "10.2.4",
         "js-yaml": "4.1.1",
