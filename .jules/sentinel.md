@@ -1,0 +1,4 @@
+## 2025-05-15 - [HALLUCINATION_FALSE_POSITIVE] Hallucination claims during code review regarding valid npm package versions.
+**Vulnerability:** Not a software vulnerability, but a process vulnerability where valid security patches are rejected due to incorrect claims of "hallucinated" versions.
+**Learning:** Some automated or human reviewers may not have the most up-to-date registry information. Versions like `brace-expansion@5.0.4` and `balanced-match@4.0.4` were flagged as non-existent despite being confirmed via `npm view` in the sandbox. This can lead to the rejection of critical security overrides (e.g., for `minimatch@10.x` ReDoS).
+**Prevention:** Always use `npm view <package> versions` to verify the existence of a version before and after implementation. If a review disputes the version, provide the `npm view` output as evidence of validity.
