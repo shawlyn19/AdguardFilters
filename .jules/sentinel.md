@@ -1,0 +1,4 @@
+## 2025-05-15 - [Security Dependency Management]
+**Vulnerability:** Multiple high and moderate severity vulnerabilities in transitive dependencies (`minimatch`, `glob`, `js-yaml`, `markdown-it`, `brace-expansion`, `balanced-match`) including ReDoS, Command Injection, and Prototype Pollution.
+**Learning:** Even if direct devDependencies are updated, transitive dependencies can lag behind and keep vulnerabilities in the tree. Exact version pinning in `package.json` for security toolchain packages prevents supply chain risks from unverified updates.
+**Prevention:** Use `npm audit` regularly. Use the `overrides` field in `package.json` to force patched versions of transitive dependencies when direct dependencies do not yet point to secure versions. Document GHSA IDs in `package.json` to explain the necessity of overrides. Maintain repository formatting (CRLF) when modifying package files.
