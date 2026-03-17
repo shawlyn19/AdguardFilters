@@ -5426,25 +5426,25 @@ mediamarkt.de#%#//scriptlet('abort-on-property-write', 'ftr__startScriptLoad')
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/216803
 ! aglint-disable no-invalid-modifiers
-!+ NOT_VALIDATE PLATFORM(windows, mac, android)
+!+ NOT_VALIDATE PLATFORM(windows, mac, android, cli)
 ||track.effiliation.com/servlet/effi.redir$urltransform=/%3A/:/
-!+ NOT_VALIDATE PLATFORM(windows, mac, android)
+!+ NOT_VALIDATE PLATFORM(windows, mac, android, cli)
 ||track.effiliation.com/servlet/effi.redir$urltransform=/%2F/\//
-!+ NOT_VALIDATE PLATFORM(windows, mac, android)
+!+ NOT_VALIDATE PLATFORM(windows, mac, android, cli)
 ||track.effiliation.com/servlet/effi.redir$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?track\.effiliation\.com.*[?&]url=(.+)$/\$1/
 ! aglint-enable no-invalid-modifiers
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/197963
 ! aglint-disable no-invalid-modifiers
-!+ NOT_VALIDATE PLATFORM(windows, mac, android)
+!+ NOT_VALIDATE PLATFORM(windows, mac, android, cli)
 ||digidip.net/visit?url=$urltransform=/%3A/:/
-!+ NOT_VALIDATE PLATFORM(windows, mac, android)
+!+ NOT_VALIDATE PLATFORM(windows, mac, android, cli)
 ||digidip.net/visit?url=$urltransform=/%2F/\//
-!+ NOT_VALIDATE PLATFORM(windows, mac, android)
+!+ NOT_VALIDATE PLATFORM(windows, mac, android, cli)
 ||digidip.net/visit?url=$urltransform=/%3F/?/
-!+ NOT_VALIDATE PLATFORM(windows, mac, android)
+!+ NOT_VALIDATE PLATFORM(windows, mac, android, cli)
 ||digidip.net/visit?url=$urltransform=/%3D/=/
-!+ NOT_VALIDATE PLATFORM(windows, mac, android)
+!+ NOT_VALIDATE PLATFORM(windows, mac, android, cli)
 ||digidip.net/visit?url=$urltransform=/^https?:\/\/(?:[a-z0-9-]+\.)*?.*\.digidip\.net.*url=([^&]*).*/\$1/
 ! aglint-enable no-invalid-modifiers
 !
@@ -5456,9 +5456,9 @@ dzen.ru#%#//scriptlet('json-prune', 'ssrData.exportResponse.feedData.adPixelsDat
 ||cdn.dzen.ru/pingx
 ||suggest.sso.dzen.ru/clck/$image,ping
 ||clck.dzen.ru/click|
-!+ PLATFORM(windows, mac, android)
+!+ PLATFORM(windows, mac, android, cli)
 ||dzen.ru/api/v4/launcher/stats/$badfilter
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 ||dzen.ru/api/*/launcher/stats/$xmlhttprequest,image
 !
 !#if (!adguard_app_ios && !adguard_ext_android_cb)
@@ -5517,12 +5517,12 @@ link.gmapp*.net$image
 gmarket.co.kr#%#//scriptlet('fingerprintjs2')
 !#endif
 ! https://github.com/AdguardTeam/AdguardFilters/issues/167721
-!+ PLATFORM(windows, mac, android)
+!+ PLATFORM(windows, mac, android, cli)
 ||weibo.com/ajax/log/$xmlhttprequest,redirect=nooptext
 ! https://github.com/AdguardTeam/AdguardForWindows/issues/3973
 ||static.olx.pl/static/*/js/tracking/ninja.js$important,domain=olx.pl
 ! https://github.com/AdguardTeam/AdguardFilters/issues/75799
-!#if (adguard_app_windows || adguard_app_mac || adguard_app_android)
+!#if (adguard_app_windows || adguard_app_mac || adguard_app_android || adguard_app_cli)
 ||cdn.optimizely.com^$redirect=nooptext,domain=alaskaair.com
 ||cdn.appdynamics.com/adrum$redirect=nooptext,domain=alaskaair.com
 ||alaskaair.com/javascripts/adrum.js$script,redirect=noopjs,domain=alaskaair.com

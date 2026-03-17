@@ -9,9 +9,11 @@
 ! Required for apps only
 ! When request is blocked then there is an error "Unexpected token / in JSON at position 0"
 ! It's loaded by cdn.cookielaw.org/scripttemplates/otSDKStub.js, so it should be only unblocked on websites for which this script is unblocked
-!+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
+!+ NOT_OPTIMIZED PLATFORM(windows, mac, android, cli)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/227247
+@@||cdn.cookielaw.org/consent/*.json$domain=seriouseats.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/227038
 @@||sdk.privacy-center.org/*/loader.js$domain=ertflix.gr
 @@||sdk.privacy-center.org/sdk/$domain=ertflix.gr
@@ -1547,7 +1549,7 @@ tarczynskiarenawroclaw.pl,blog.bizvibe.com#@##cookie-law-info-bar
 ! https://github.com/AdguardTeam/AdguardFilters/issues/175701
 @@||cdn-ukwest.onetrust.com^$domain=super6.skysports.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/175560
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli)
 @@||app.eu.usercentrics.eu^$domain=loewenbraeukeller.com
 @@||sdp.eu.usercentrics.eu^$domain=loewenbraeukeller.com
 @@||config.eu.usercentrics.eu^$domain=loewenbraeukeller.com
@@ -1572,7 +1574,7 @@ rtl.nl#@##onetrust-consent-sdk
 ! https://github.com/AdguardTeam/AdguardFilters/issues/174435
 avplanet.hu#@#.cookie-alert
 ! https://github.com/AdguardTeam/AdguardFilters/issues/174692
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_ext_chromium && !adguard_ext_opera)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli && !adguard_ext_chromium && !adguard_ext_opera)
 @@||sdk.privacy-center.org^$domain=le10sport.com
 !#endif
 ! https://github.com/AdguardTeam/AdguardFilters/issues/168446
@@ -1915,7 +1917,7 @@ deutsches-museum.de#@#.cookiebanner:not(body)
 @@||privacyportal-eu.onetrust.com/webform^$domain=locatepeople.org
 ! https://github.com/AdguardTeam/AdguardFilters/issues/165497
 ! Fixes video player, it seems that it occurs on Android only
-!+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
+!+ NOT_OPTIMIZED PLATFORM(windows, mac, android, cli)
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location$domain=reuters.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/165496
 @@||cdn.preferred.tech/cookie-consent.*.js$domain=typing.playgram.jp
@@ -2456,7 +2458,7 @@ kultura.com.pl#@##cookieModal
 ! https://github.com/List-KR/List-KR/issues/656 - The plus buttons placing next to country name cannot be clicked.
 @@||cdn.oddschecker.com/cookie-policy-banner/bundle/cookie-policy-banner-$script
 ! https://github.com/AdguardTeam/AdguardFilters/issues/146471
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_ext_chromium)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli && !adguard_ext_chromium)
 @@||sdk.privacy-center.org^$domain=ozap.com
 !#endif
 ! https://github.com/AdguardTeam/AdguardFilters/issues/146761
@@ -2973,7 +2975,7 @@ bafa.de#@#.cookiebanner:not(body)
 ble.de#@##cookiebanner
 ble.de#@#.cookiebanner:not(body)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123888
-!+ NOT_PLATFORM(windows, mac, android, ext_chromium)
+!+ NOT_PLATFORM(windows, mac, android, cli, ext_chromium)
 @@||ap*.usercentrics.eu^$domain=wohnglueck.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/124034
 @@||sdk.privacy-center.org^$domain=lesoir.be
@@ -3011,7 +3013,7 @@ schleswig-holstein.de#@#.cookiebanner:not(body)
 diorama-world.com#@#.cookie-consent-content
 ! https://github.com/AdguardTeam/AdguardFilters/issues/176833
 ! https://github.com/AdguardTeam/AdguardFilters/issues/122714
-!+ NOT_PLATFORM(windows, mac, android, ext_chromium, ext_ff, ext_opera, ext_ublock)
+!+ NOT_PLATFORM(windows, mac, android, cli, ext_chromium, ext_ff, ext_opera, ext_ublock)
 @@||sdk.privacy-center.org^$domain=radiofrance.fr
 ||sdk.privacy-center.org/*/loader.js$script,redirect=didomi-loader,domain=radiofrance.fr,important
 ! https://github.com/AdguardTeam/AdguardFilters/issues/122648
@@ -3064,7 +3066,7 @@ milwaukeetool.eu#@##onetrust-consent-sdk
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119755
 deineapotheke.at#@#.cookie-banner:not(body):not(html)
 ! https://github.com/AdguardTeam/AdguardFilters/issues/119739
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_ext_chromium)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli && !adguard_ext_chromium)
 developer.confluent.io#@##onetrust-consent-sdk
 @@||cdn.cookielaw.org/scripttemplates/otSDKStub.js$domain=developer.confluent.io
 !#endif
@@ -3491,7 +3493,7 @@ visti.it#@#.cookiealert
 @@||quantcast.mgr.consensu.org/choice/*/choice.js$domain=tomsguide.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/95233
 ! This issue occurs only in apps, because script is removed from website and it causes breakage
-!+ PLATFORM(windows, mac, android)
+!+ PLATFORM(windows, mac, android, cli)
 ||ccpa-wrapper.privacymanager.io/ccpa/*/ccpa-liveramp.js$script,redirect=noopjs,domain=venturebeat.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/94936
 @@||cdn.opencmp.net^$domain=stimme.de
@@ -3556,7 +3558,7 @@ olympics.com#@##onetrust-consent-sdk
 ! https://github.com/AdguardTeam/AdguardFilters/issues/92918
 digital-fuer-deutschland.de#@##cookiebanner
 ! https://github.com/AdguardTeam/AdguardFilters/issues/93013
-!+ PLATFORM(windows, mac, android)
+!+ PLATFORM(windows, mac, android, cli)
 ||consent.cookiebot.com/uc.js$script,redirect=noopjs,domain=compo.de
 ! https://github.com/AdguardTeam/AdguardFilters/issues/92817
 bremerhaven.de#@#.cookie-banner:not(body):not(html)
@@ -3853,7 +3855,7 @@ www-kreiszeitung-de.cdn.ampproject.org#@#amp-consent
 ! https://github.com/AdguardTeam/AdguardFilters/issues/85066
 @@||cdn.cookielaw.org/consent/*.json$domain=ign.com
 @@||geolocation.onetrust.com/cookieconsentpub/*/geo/location$domain=ign.com
-!+ NOT_PLATFORM(windows, mac, android, ext_chromium)
+!+ NOT_PLATFORM(windows, mac, android, cli, ext_chromium)
 ign.com#@##_evidon-barrier-wrapper
 ! https://github.com/AdguardTeam/AdguardFilters/issues/84488
 hallhuber.com#@#.cookie-box:not(body):not(html)

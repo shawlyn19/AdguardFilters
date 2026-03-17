@@ -60,6 +60,11 @@ gundamlog.com###more > iframe[src^="https://richlink.blogsys.jp"]
 !
 ! NOTE: Specific rules
 !
+/ad_overlay.css$domain=39news.net|3punchiebukuro.info|catheart.pet|davincinews.info|dogheart.pet|entame-news.info|entame-trendnews.info|ichi-oshi.info|lettuceclub.site|mainichigahakken.info|mamanote.info|point-dengekihobby.jp|point-thetv.jp|presslink.jp|tamahiyo.site|trend-news.fun|walkerplus.info
+39news.net,3punchiebukuro.info,catheart.pet,davincinews.info,dogheart.pet,entame-news.info,entame-trendnews.info,ichi-oshi.info,lettuceclub.site,mainichigahakken.info,mamanote.info,point-dengekihobby.jp,point-thetv.jp,presslink.jp,tamahiyo.site,trend-news.fun,walkerplus.info##.article-FooterOverlay
+39news.net,3punchiebukuro.info,catheart.pet,davincinews.info,dogheart.pet,entame-news.info,entame-trendnews.info,ichi-oshi.info,lettuceclub.site,mainichigahakken.info,mamanote.info,point-dengekihobby.jp,point-thetv.jp,presslink.jp,tamahiyo.site,trend-news.fun,walkerplus.info##[class*="BannerWrapper"]
+39news.net,3punchiebukuro.info,catheart.pet,davincinews.info,dogheart.pet,entame-news.info,entame-trendnews.info,ichi-oshi.info,lettuceclub.site,mainichigahakken.info,mamanote.info,point-dengekihobby.jp,point-thetv.jp,presslink.jp,tamahiyo.site,trend-news.fun,walkerplus.info#$##js_detail-Interstitial_Div { display: none !important; }
+39news.net,3punchiebukuro.info,catheart.pet,davincinews.info,dogheart.pet,entame-news.info,entame-trendnews.info,ichi-oshi.info,lettuceclub.site,mainichigahakken.info,mamanote.info,point-dengekihobby.jp,point-thetv.jp,presslink.jp,tamahiyo.site,trend-news.fun,walkerplus.info#$#.article-OverflowHidden { overflow: auto !important; }
 saiganak.com##div.entry-adcenter
 saiganak.com##.container > .entry-product:has(> a[href^="https://www.amazon.co.jp/"])
 my-favorite-giants.net##div[id^="main_pr_"]
@@ -8399,7 +8404,7 @@ w.atwiki.jp###wikibody > h3[id^="id_"] + br + hr
 w.atwiki.jp###imobile_adspotdiv2
 ||atwiki.jp/common/dist/js/atwiki_autoads.js
 ||atwiki.jp/common/dist/js/moveads.js
-||daily.jp/Koukoku/
+||daily.jp/Koukoku/$image
 daily.co.jp###dspc-relation_img
 daily.co.jp###nativeRecommend
 daily.co.jp##aside[class^="aside-"][class*="-ad"]
@@ -10141,7 +10146,7 @@ kokopyon.net##.topentry_text
 ||livedoor.blogimg.jp/ld_manga/imgs/
 !+ NOT_OPTIMIZED
 web.gekisaka.jp###PC_SP_NEWS_D_GROUP
-!#if (adguard_app_windows || adguard_app_mac || adguard_app_android)
+!#if (adguard_app_windows || adguard_app_mac || adguard_app_android || adguard_app_cli)
 automaton-media.com$$style[id="custom-background-css"]
 !#else
 automaton-media.com#$?##custom-background-css { remove: true; }

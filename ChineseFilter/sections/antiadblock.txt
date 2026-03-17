@@ -8,6 +8,10 @@
 ! Bad: ||ad.doubleclick.net^ (should be in adservers.txt)
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/227233
+verb.tw#$#.adsbox.ad-placement.ad-banner.textad.sponsorad { display: block !important; }
+!+ PLATFORM(ios, ext_android_cb, ext_safari)
+@@||verb.tw^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/224352
 tstrs.me#%#//scriptlet('prevent-setTimeout', 'offsetHeight === 0')
 !#if (adguard_app_ios || adguard_ext_safari || adguard_ext_android_cb)
@@ -236,9 +240,9 @@ rjno1.com#%#function preventError(d){window.addEventListener("error",function(a)
 @@||img3.126.net/ntesrich/*/adControl-indexx-$script,domain=rjno1.com
 ||cpro.baidu.com/cpro/ui/rt.js$script,redirect=noopjs,domain=rjno1.com
 ||googleads.g.doubleclick.net/pagead/ads$subdocument,redirect=noopframe,domain=rjno1.com,important
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 ||126.net^$script,redirect=noopjs,domain=rjno1.com
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_ext_chromium && !adguard_ext_opera)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli && !adguard_ext_chromium && !adguard_ext_opera)
 rjno1.com#@#ins.adsbygoogle[data-ad-client]
 rjno1.com#@#ins.adsbygoogle[data-ad-slot]
 @@||hm.baidu.com/hm.js$domain=rjno1.com
@@ -490,7 +494,7 @@ t66y.com#%#//scriptlet('prevent-setTimeout', 'html')
 t66y.com#@#.tips
 t66y.com#@#.sptable_do_not_remove
 !#endif
-!+ NOT_PLATFORM(windows, mac, android, ext_chromium, ext_edge)
+!+ NOT_PLATFORM(windows, mac, android, cli, ext_chromium, ext_edge)
 t66y.com#$?#.sptable_do_not_remove { display: block !important; visibility: hidden !important; }
 ||alicdn.com^$domain=t66y.com
 ||sinaimg.cn^$domain=t66y.com

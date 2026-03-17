@@ -145,7 +145,7 @@ androidtop.net#%#//scriptlet("adjust-setInterval", "countdown", "", "0.02")
 ! zikurat.media - background
 zikurat.media#%#//scriptlet('prevent-window-open', '0', 'zikurat.media')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/56102#issuecomment-633917168
-!+ NOT_PLATFORM(windows, mac, android, ext_ff)
+!+ NOT_PLATFORM(windows, mac, android, cli, ext_ff)
 forallkino.ru,hdrabbit.ru,kinowinx.ru#%#//scriptlet("set-constant", "Object.prototype.timeToHoldAds", "0")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/55487
 oxax.tv#%#//scriptlet('prevent-window-open')
@@ -180,7 +180,7 @@ vk.com#%#//scriptlet("set-constant", "noAdsAtAll", "true")
 ! life.ru - ads
 life.ru#?#.news-feed-item:has(> div.news-feed-item-advertising)
 ! tele.ru - ads
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 tele.ru#%#//scriptlet("abort-current-inline-script", "String.fromCharCode", "/substr/")
 ! Streams at sport-24tv.ru
 sportbox.ws,goool7.ws,sport-24tv.ru#%#//scriptlet("prevent-window-open")
@@ -749,10 +749,10 @@ mel.fm#$#.i-layout_branding > i-layout__branding-content-wrapper { margin-top: 0
 ! car.ru - top padding fix
 car.ru#$#main > header { padding-top: 0!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/37631
-!+ NOT_PLATFORM(windows, mac, android, ext_ff)
+!+ NOT_PLATFORM(windows, mac, android, cli, ext_ff)
 rpgnuke.ru#$#html > body { background: none!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/28519
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli)
 razlozhi.ru#$#body > div[class][style^="background: url"][style*="rgb"][style*="; width:"][style*="; height:"] { width: 100% !important; }
 razlozhi.ru#$#body[class] { margin-right: 0 !important; overflow: visible !important; }
 !#endif
@@ -954,7 +954,7 @@ koolinar.ru#$#body { background-image: none !important; }
 hs-manacost.ru#$#body { background-image: none!important; }
 hs-manacost.ru#$##td-outer-wrap { cursor: auto!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/8579
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 bazr.ru#$#.fluid-width-video-wrapper { padding-top: 50%!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/7998
 province.ru#$#div[style*="width:240px;"][style*="height: 400px;"] { visibility: hidden!important; }
@@ -1008,7 +1008,7 @@ itbukva.com#$#.popular_tems { margin-bottom: 1em!important; }
 iguides.ru#$#body > div[style="height: 300px;"] { height: 100px!important; }
 !
 ! https://forum.adguard.com/index.php?threads/18179/
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 iomedia.ru#$#.adsbygoogle { position: absolute!important; left: -3000px!important; }
 !
 ! banki.ru - удаление отступа сверху
@@ -1180,7 +1180,7 @@ bikepost.ru#$#.ooDgoDoo { height: 0!important; }
 37.1.207.65#$#body { padding: 0 0 0 !important; }
 !
 ! ok.ru - ads in the right column
-!+ PLATFORM(windows,mac,android)
+!+ PLATFORM(windows, mac, android, cli)
 !ok.ru#$#.trg-b-banner-block { opacity: 0.01!important; pointer-events: none!important; height: 2px!important; }
 !ok.ru#$#.dialogWrapperBanner * { height: 0!important; }
 ! roem.ru - удаление брендированного фона, отступа сверху

@@ -38,7 +38,7 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/15840
 ! https://github.com/AdguardTeam/AdguardFilters/issues/39593
 @@/assets/js/advertisement.js$~third-party
-@@/js/ads.js|$script,~third-party,domain=~internethaber.com|~knaqu.tv
+@@/js/ads.js|$script,~third-party,domain=~internethaber.com|~knaqu.tv|~5ch.io
 @@/js/advert.js$~third-party
 @@/jannah/*js/advertisement.js|$~third-party
 @@/themes/flow/frontend_assets/js/advertisement.js|$~third-party
@@ -356,20 +356,20 @@ the-sun.com,gmx.*,transfermarkt.*$$script[tag-content="Flags."][min-length="2000
 !
 ! JS rule for blocking XHR requests
 ! ***It has less supported ad domains than new rule***
-!+ NOT_OPTIMIZED NOT_PLATFORM(windows, mac, android)
+!+ NOT_OPTIMIZED NOT_PLATFORM(windows, mac, android, cli)
 5.ua,antidiary.com,chudesa.site,gazeta.ua,guru.ua,hd-dream.ru,kino-dom.org,lugradar.net,oklivetv.com,pure-t.ru,rian.com.ua,webcam.guru.ua,yahooeu.ru#%#(function(){var b=XMLHttpRequest.prototype.open,c=/[/.@](piguiqproxy\.com|rcdn\.pro|amgload\.net|dsn-fishki\.ru|v6t39t\.ru|greencuttlefish\.com|rgy1wk\.ru|vt4dlx\.ru|d38dub\.ru)[:/]/i;XMLHttpRequest.prototype.open=function(d,a){if("GET"===d&&c.test(a))this.send=function(){return null},this.setRequestHeader=function(){return null},console.log("AG has blocked request: ",a);else return b.apply(this,arguments)}})();
-!+ NOT_OPTIMIZED NOT_PLATFORM(windows, mac, android)
+!+ NOT_OPTIMIZED NOT_PLATFORM(windows, mac, android, cli)
 game8.vn,shippuden-naruto.com#%#(function(){var b=XMLHttpRequest.prototype.open,c=/[/.@](piguiqproxy\.com|rcdn\.pro|amgload\.net|dsn-fishki\.ru|v6t39t\.ru|greencuttlefish\.com|rgy1wk\.ru|vt4dlx\.ru|d38dub\.ru|csp-oz66pp\.ru|ok9ydq\.ru|kingoablc\.com)[:/]/i;XMLHttpRequest.prototype.open=function(d,a){if("GET"===d&&c.test(a))this.send=function(){return null},this.setRequestHeader=function(){return null},console.log("AG has blocked request: ",a);else return b.apply(this,arguments)}})();
 ! JS for the sites with frequenly changed ad domains
 ! Another JS rule for some sites
-!+ NOT_OPTIMIZED NOT_PLATFORM(windows, mac, android, ext_ff)
+!+ NOT_OPTIMIZED NOT_PLATFORM(windows, mac, android, cli, ext_ff)
 acefile.co,mineavto.ru,newkaliningrad.ru,eku.ru,kramola.info,farap.ru,vesti.ru,myslo.ru,pravda.ru,vesti.ru,itog.info,myshows.me,neolove.ru#%#//scriptlet("abort-current-inline-script", "atob", "['charCodeAt']")
 !
 ! https://github.com/uBlockOrigin/uAssets/issues/30172
 ! https://github.com/AdguardTeam/AdguardFilters/issues/11091
 ! ads reinjection
 kizi.com,minijuegos.com,footyroom.com,computerhoy.com,tworeddots.com,netzwelt.de,datpiff.com,jpost.com,quotidiano.net,broadwayworld.com,bold.dk,ilrestodelcarlino.it,spaziogames.it,ilgiorno.it,acidcow.com,yepi.com,talkwithstranger.com,mathwarehouse.com,lanazione.it,vidmax.com,popmatters.com,toptenz.net,autobild.es,activistpost.com,spiele-umsonst.de,tamilo.com,nowtheendbegins.com,obaoba.com.br,autopista.es,izzygames.com,blacklistednews.com,textsfromlastnight.com,meta-chart.com,motociclismo.es,mobga.me,ginjfo.com,sportlife.es,dailygalaxy.com,miniplay.com,meta-calculator.com,minijogos.com.br,ciclismoafondo.es,hiphopearly.com,iltelegrafolivorno.it,healthyfocus.org,parolesdefoot.com,asheepnomore.net,virtualjerusalem.com,dailyspikes.com,triatlonweb.es,vreme-on.net,transportemundial.es,mathworksheetsgo.com,lamoto.es,sportenkort.dk,motomercado.es,datpiff.com,asheepnomore.net,tworeddots.com,datpiff.com,footyroom.com,kizi.com$$script[wildcard="*try{(function()*addEventListener*i.test(navigator.userAgent*"][max-length="10000"]
-!+ NOT_OPTIMIZED NOT_PLATFORM(windows, mac, android)
+!+ NOT_OPTIMIZED NOT_PLATFORM(windows, mac, android, cli)
 kizi.com,minijuegos.com,footyroom.com,computerhoy.com,tworeddots.com,netzwelt.de,datpiff.com,jpost.com,quotidiano.net,broadwayworld.com,bold.dk,ilrestodelcarlino.it,spaziogames.it,ilgiorno.it,acidcow.com,yepi.com,talkwithstranger.com,mathwarehouse.com,lanazione.it,vidmax.com,popmatters.com,toptenz.net,autobild.es,activistpost.com,spiele-umsonst.de,tamilo.com,nowtheendbegins.com,obaoba.com.br,autopista.es,izzygames.com,blacklistednews.com,textsfromlastnight.com,meta-chart.com,motociclismo.es,mobga.me,ginjfo.com,sportlife.es,dailygalaxy.com,miniplay.com,meta-calculator.com,minijogos.com.br,ciclismoafondo.es,hiphopearly.com,iltelegrafolivorno.it,healthyfocus.org,parolesdefoot.com,asheepnomore.net,virtualjerusalem.com,dailyspikes.com,triatlonweb.es,vreme-on.net,transportemundial.es,mathworksheetsgo.com,lamoto.es,sportenkort.dk,motomercado.es,datpiff.com,asheepnomore.net,tworeddots.com,datpiff.com,footyroom.com,kizi.com#%#//scriptlet("abort-current-inline-script", "EventTarget.prototype.addEventListener", "window.TextDecoder")
 !
 ! SECTION: AdFender
@@ -483,7 +483,7 @@ wololo.net,lebakcyber.net,ifdreamscametrue.com,nudes7.com,switch-xci.xyz,ps4pkg.
 !START: adtoniq
 bigleaguepolitics.com,flagandcross.com#%#//scriptlet("abort-on-property-read", "adtoniq")
 flagandcross.com$$script[tag-content="adtoniq_protect"]
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=flagandcross.com
 !
 tech.gelbooru.com,flagandcross.com#$#.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links { display: block !important; }
@@ -1195,7 +1195,7 @@ shentai-anime.com,s-porn.com,cosplay-xxx.com,hentaicovid.org,gofile.download,cn-
 ! START: Ads replacement (this script is similar to `zmctrack`)
 !
 filmvilag.me,liderendeportes.com,serieskao.tv,ac24.cz,nsfwyoutube.com,igg-games.com,thodkyaat.com,onlymen.cz,ultimasnoticias.com.ve,ibb.co$$script[wildcard="*track*atob*ShadowRoot*"][min-length="5000"][max-length="10000"]
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli)
 filmvilag.me,liderendeportes.com,serieskao.tv,ac24.cz,igg-games.com,ibb.co#$?#body > iframe[name]:not([class]):not([id]):not([src])[style*="none"] { remove: true; }
 filmvilag.me,liderendeportes.com,serieskao.tv,ac24.cz,nsfwyoutube.com,igg-games.com,thodkyaat.com,onlymen.cz,ultimasnoticias.com.ve,ibb.co##pp
 igg-games.com##slot + div[class]
@@ -1720,7 +1720,7 @@ snopes.com#%#//scriptlet('prevent-setTimeout', '.offsetHeight === 0')
 snopes.com#%#//scriptlet('prevent-setTimeout', '=>')
 snopes.com#%#//scriptlet('prevent-addEventListener', 'DOMContentLoaded', 'setTimeout(()')
 snopes.com#%#//scriptlet('prevent-element-src-loading', 'script', '/adsbygoogle|doubleclick|googletagservices|bigcrunch/')
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli)
 snopes.com#$#.sidebar_ad { transform: rotateX(90deg) !important; height: 1px !important; }
 snopes.com#$#.outer_ad_container { transform: rotateX(90deg) !important; height: 1px !important; }
 snopes.com#$#.snopesad { transform: rotateX(90deg) !important; height: 1px !important; position: fixed !important; }
@@ -2041,7 +2041,7 @@ readallcomics.com##.jconfirm-box-container:has(.jconfirm-buttons > .btn-blue.ref
 readallcomics.com#%#//scriptlet('prevent-element-src-loading', 'script', 'pagead2.googlesyndication.com')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/210548
 urlgd.com#%#//scriptlet('prevent-element-src-loading', 'script', 'pagead2.googlesyndication.com')
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noopjs,domain=urlgd.com
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=urlgd.com
@@ -2900,7 +2900,7 @@ gpldose.com#%#//scriptlet('abort-on-property-write', 'Dataffcecd')
 ! https://github.com/AdguardTeam/AdguardFilters/issues/194085
 noice.com#%#//scriptlet('set-constant', 'adsBlocked', 'false')
 noice.com#%#(()=>{const e={breakStatus:"done"},o=["beforeReward","adViewed","adBreakDone"];window.adsbygoogle=window.adsbygoogle||[],window.adsbygoogle.push=function(d){var a;d&&"object"==typeof d&&(a=d,o.every((e=>e in a&&"function"==typeof a[e])))&&(d.beforeReward(),d.adViewed(),d.adBreakDone(e))}})();
-!+ NOT_PLATFORM(windows, mac, android, ext_chromium, ext_chromium_mv3, ext_opera)
+!+ NOT_PLATFORM(windows, mac, android, cli, ext_chromium, ext_chromium_mv3, ext_opera)
 @@||pagead2.googlesyndication.com/pagead/$domain=noice.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/194001
 play.virginmediatelevision.ie#%#//scriptlet('prevent-element-src-loading', 'script', 'imasdk.googleapis.com/js/sdkloader/ima3.js')
@@ -3101,7 +3101,7 @@ uploadmall.com#@#iframe[width="728"][height="90"]
 uploadmall.com#%#//scriptlet('set-constant', 'navigator.brave', 'undefined')
 uploadmall.com#%#//scriptlet('trusted-replace-outbound-text', 'atob', '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', 'data:text/javascript;base64,KCk9Pnt9')
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication-adsbygoogle,domain=uploadmall.com
-!+ NOT_PLATFORM(windows, mac, android, ext_chromium, ext_opera)
+!+ NOT_PLATFORM(windows, mac, android, cli, ext_chromium, ext_opera)
 @@||dcbbwymp1bhlf.cloudfront.net^$script,domain=uploadmall.com
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=uploadmall.com
@@ -3221,7 +3221,7 @@ sivadictionaries.com#$#.adsbygoogle { height: 1px !important; }
 ||im9.eu/*_*_*.js
 im9.eu#%#//scriptlet('prevent-eval-if', 'adpreserve')
 im9.eu#%#//scriptlet('abort-current-inline-script', 'setTimeout', '/\+-parseInt.*0x.*;if\(typeof/')
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 @@-sponsor-ad.gif?advert=$domain=im9.eu
 ! https://github.com/AdguardTeam/AdguardFilters/issues/185311
 fastp.org#%#//scriptlet('set-constant', 'adsbygoogle.loaded', 'true')
@@ -3773,7 +3773,7 @@ arabic-for-nerds.com#%#//scriptlet("prevent-addEventListener", "DOMContentLoaded
 @@||arabic-for-nerds.com/wp-content/plugins/complianz-gdpr-premium/cookiebanner/js/complianz.min.js$domain=arabic-for-nerds.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/174290
 ||botrix.live/web_files/main-es2015.*.js$replace=/isUsingAdblock\(\){return window\.usingAdblock/isUsingAdblock(){return;/
-!+ NOT_PLATFORM(windows, mac, android, ext_ff)
+!+ NOT_PLATFORM(windows, mac, android, cli, ext_ff)
 botrix.live#%#//scriptlet('set-constant', 'Object.prototype.isAdblock', 'undefined')
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=botrix.live
@@ -4542,7 +4542,7 @@ anisearch.*#$#.pagewidth > div.pcenter[id] { display: block !important; }
 @@||anisearch.*^$generichide
 ||anisearch.com/media/js/*/*/*.js$replace=/(\.onerror=\(\)=>\{.\()!0(\);)/\$1!1\$2/
 ! JS rule is required for apps because apps cannot inject script to "about:blank" iframe
-!+ PLATFORM(windows, mac, android)
+!+ PLATFORM(windows, mac, android, cli)
 anisearch.*#%#(()=>{const e=Object.getOwnPropertyDescriptor(HTMLIFrameElement.prototype,"src"),t=Object.getOwnPropertyDescriptor(HTMLLinkElement.prototype,"href"),o=e=>{Object.defineProperty(e.contentWindow.HTMLLinkElement.prototype,"href",{get(){return t.get.call(this)},set(e){t.set.call(this,e),setTimeout((()=>{const e=new Event("load");this.dispatchEvent(e)}),0)}})},n={apply:(t,n,r)=>{const i=Reflect.apply(t,n,r);return r[0]&&r[0]instanceof HTMLIFrameElement&&""===r[0].src&&Object.defineProperty(r[0],"src",{get(){return e.get.call(this)},set(t){"about:blank"===t&&this.onload?.toString().includes("document.body.removeChild")?setTimeout((()=>{o(this);const e=new Event("load");this.dispatchEvent(e)}),0):e.set.call(this,t)}}),i}};window.Node.prototype.appendChild=new Proxy(window.Node.prototype.appendChild,n)})();
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||cdntrf.com/css/anisearch.css$domain=anisearch.*
@@ -4907,7 +4907,7 @@ southpark.*,southparkstudios.*#%#//scriptlet('prevent-fetch', 'imasdk.googleapis
 southpark.*,southparkstudios.*#%#//scriptlet('google-ima3')
 ||imasdk.googleapis.com/pal/sdkloader/pal.js$script,redirect=noopjs,domain=southpark.*|southparkstudios.*
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima3,domain=southpark.*|southparkstudios.*
-!+ NOT_PLATFORM(windows, mac, android, ext_chromium, ext_opera)
+!+ NOT_PLATFORM(windows, mac, android, cli, ext_chromium, ext_opera)
 @@||mssl.fwmrm.net/libs/adm/*/AdManager.js$domain=southpark.*|southparkstudios.*
 !#if (adguard_app_ios || adguard_ext_safari || adguard_ext_android_cb)
 @@||imasdk.googleapis.com/pal/sdkloader/pal.js$domain=southpark.*|southparkstudios.*
@@ -4968,7 +4968,7 @@ xfreehd.com#%#//scriptlet('remove-node-text', 'script', '.abk_msg')
 xfreehd.com#@#.ad-title
 xfreehd.com##.abk_msg
 xfreehd.com#@#.ad-body
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 $script,redirect-rule=noopjs,domain=xfreehd.com
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||googletagmanager.com/gtag/js$domain=xfreehd.com
@@ -5439,7 +5439,7 @@ winaero.com#%#//scriptlet('abort-current-inline-script', 'jQuery', '/\.innerHTML
 winaero.com$$script[wildcard="*.innerHTML*.parentNode.insertBefore*"][max-length="2000"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/149195
 z-lib.io#%#//scriptlet('set-constant', 'isAdBlockActive', 'false')
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noopjs,domain=z-lib.io
 !+ PLATFORM(ios, ext_safari, ext_android_cb)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=z-lib.io
@@ -5659,7 +5659,7 @@ broadwayworld.com#@#.ad-space
 broadwayworld.com#@#.adsbox
 !#endif
 ! https://github.com/AdguardTeam/AdguardFilters/issues/144195
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 $script,redirect-rule=noopjs,domain=diudemy.com
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||googletagmanager.com/gtag/js$domain=diudemy.com
@@ -6326,7 +6326,7 @@ donnaglamour.it###detect ~ div[style^="display: flex; align-items: center; justi
 techcyan.com#%#//scriptlet("abort-current-inline-script", "$", "div-gpt-ad")
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/132509
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 $script,redirect-rule=noopjs,domain=insurancegold.in
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/130397
@@ -6449,7 +6449,7 @@ howdy.id#@#.ad-wrapper
 ! https://github.com/AdguardTeam/AdguardFilters/issues/128185
 supercloudsms.com###adb-mask
 ! adshnk.com
-!+ PLATFORM(windows, mac, android, ext_ff)
+!+ PLATFORM(windows, mac, android, cli, ext_ff)
 adshnk.com#%#//scriptlet("prevent-setInterval", "adblocker", "10000")
 @@||pagead2.googlesyndication.com/pagead/*?fcd=true$domain=adshnk.com
 @@||incolumitas.com/data^$domain=adshnk.com
@@ -6489,7 +6489,7 @@ zeroupload.com#$?#body > center[id]:has(> p:contains(Disable Your ad blocker)) {
 zeroupload.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 zeroupload.com#%#//scriptlet('abort-current-inline-script', 'EventTarget.prototype.addEventListener', '/nextFunction|google_ad_client|adsbygoogle\.js/')
 $script,redirect-rule=noopjs,domain=zeroupload.com
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 @@||zeroupload.com^$generichide
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=zeroupload.com
@@ -6558,7 +6558,7 @@ orbispatches.com#@#.adsbyvli
 orbispatches.com#$#body .adsbyvli { display: block !important; height: 30px !important; }
 orbispatches.com#%#(()=>{window.viAPItag={init(){}}})();
 orbispatches.com#%#//scriptlet('prevent-fetch', 'services.vlitag.com/adv')
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_ext_chromium)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli && !adguard_ext_chromium)
 @@||services.vlitag.com/adv1/$script,domain=orbispatches.com
 @@||tag.vlitag.com^$script,domain=orbispatches.com
 !#endif
@@ -6714,7 +6714,7 @@ minorpatch.com#%#//scriptlet("abort-current-inline-script", "Array.prototype.shi
 tesla-club.eu#@#.reklama
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121126
 jasonsavard.com#%#//scriptlet('set-constant', 'detectAdsPromise', 'emptyObj')
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 jasonsavard.com#@#.ad-placement
 ! https://github.com/AdguardTeam/AdguardFilters/issues/155544
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121630
@@ -6787,7 +6787,7 @@ amritadrino.com##div[id^="adguru_modal_"]
 @@||ireland101.com/assets/js/prebid-add.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/118072
 @@||11bit.co.in/*/libs/advertisement.js
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 ||googletagmanager.com/gtag/js?id=$script,redirect=noopjs,domain=11bit.co.in
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||googletagmanager.com/gtag/js?id=$domain=11bit.co.in
@@ -6889,7 +6889,7 @@ tyla.com,gamingbible.com,unilad.com,ladbible.com#%#//scriptlet("set-constant", "
 !+ PLATFORM(ios, ext_android_cb)
 @@||micro.rubiconproject.com/prebid/dynamic/*.js$domain=ladbible.com|unilad.com|gamingbible.com|tyla.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115190
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 ||googletagmanager.com/gtag/js$script,redirect=noopjs,domain=faucetofbob.xyz
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||googletagmanager.com/gtag/js$domain=faucetofbob.xyz
@@ -6972,7 +6972,7 @@ slink.bid#%#//scriptlet("abort-current-inline-script", "document.getElementById"
 !+ PLATFORM(ios, ext_android_cb)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=slink.bid
 ! https://github.com/AdguardTeam/AdguardFilters/issues/5738
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_ext_chromium)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli && !adguard_ext_chromium)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=searchftps.net
 @@||pagead2.googlesyndication.com/pagead/managed/js/adsense/*/show_ads_impl_with_ama*.js$domain=searchftps.net
 @@||pagead2.googlesyndication.com/pagead/js/r*/show_ads_impl.js$domain=searchftps.net
@@ -7083,7 +7083,7 @@ btcadspace.com#%#//scriptlet("abort-current-inline-script", "document.getElement
 ! https://github.com/AdguardTeam/AdguardFilters/issues/110989
 mrlabtest.com##.adblockwrapper
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111267
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 ||services.vlitag.com/adv$script,redirect=noopjs,domain=mangasco.com
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||services.vlitag.com/adv1/?q=$domain=mangasco.com
@@ -7103,7 +7103,7 @@ safe.elektroupdate.com#@#ins.adsbygoogle[data-ad-slot]
 safe.elektroupdate.com#$#.adsbygoogle { height: 1px !important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/117009
 vrcmods.com#%#//scriptlet("abort-on-property-read", "bruhded")
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noopjs,domain=vrcmods.com
 ||a.pub.network^$script,redirect=noopjs,domain=vrcmods.com
 !#endif
@@ -7182,7 +7182,7 @@ diglink.blogspot.com#$##caynetunad { display: none !important; }
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=diglink.blogspot.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/108515
 xup.in###xupab
-!+ PLATFORM(windows, mac, android)
+!+ PLATFORM(windows, mac, android, cli)
 xup.in#?##xupab
 xup.in#%#//scriptlet("set-constant", "showab", "noopFunc")
 xup.in#%#//scriptlet("prevent-setTimeout", "wrapfabtest")
@@ -7214,7 +7214,7 @@ gplpalace.one#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=gplpalace.one
 ! https://github.com/AdguardTeam/AdguardFilters/issues/107394
 htmlsave.com#%#//scriptlet("remove-attr", "href", "a[id][href^='#PleaseDisableAdblock']")
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noopjs,domain=htmlsave.com
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=htmlsave.com
@@ -8553,7 +8553,7 @@ forum.release-apk.com#%#//scriptlet('trusted-replace-node-text', 'script', 'wind
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication-adsbygoogle,domain=forum.release-apk.com
 ||googleads.g.doubleclick.net/pagead/ads$redirect=noopframe,domain=forum.release-apk.com
 ||googleads.g.doubleclick.net/pagead/html/*/zrt_lookup.html$redirect=noopframe,domain=forum.release-apk.com
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_ext_chromium)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli && !adguard_ext_chromium)
 @@||googleads.g.doubleclick.net/pagead/html/*/zrt_lookup.html$domain=forum.release-apk.com
 @@||googleads.g.doubleclick.net/pagead/ads$domain=forum.release-apk.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=forum.release-apk.com
@@ -8602,7 +8602,7 @@ pipeflare.io#@#div[id^="amzn-assoc-ad"]
 livemint.com#%#//scriptlet('prevent-element-src-loading', 'script', 'pagead2.googlesyndication.com')
 livemint.com##div[class^="adBlockerPopup_"]
 ! TODO: remove rules with "TrustedScriptURL" when this issues will be fixed - https://github.com/AdguardTeam/Scriptlets/issues/514
-!+ PLATFORM(windows, mac, android)
+!+ PLATFORM(windows, mac, android, cli)
 livemint.com#%#(()=>{void 0===window.TrustedScriptURL&&(window.TrustedScriptURL=()=>{});})();
 ! https://github.com/AdguardTeam/AdguardFilters/issues/68616
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication-adsbygoogle,domain=mr9soft.com,important
@@ -8707,7 +8707,7 @@ atozmath.com#$#div[id^="vi_LN_sticky"][id*="-ad"] { visibility: hidden !importan
 atozmath.com#%#//scriptlet('set-constant', 'window_focus', 'true')
 atozmath.com#%#//scriptlet('set-constant', 'vitag.enableGeoLocation', 'false')
 atozmath.com#$#body #bottomAd.adsbox { display: block !important; }
-!#if (adguard_app_windows || adguard_app_mac || adguard_app_android || adguard_ext_chromium)
+!#if (adguard_app_windows || adguard_app_mac || adguard_app_android || adguard_app_cli || adguard_ext_chromium)
 !atozmath.com#%#//scriptlet("prevent-setInterval", "BAdBlock")
 !#endif
 ! https://github.com/AdguardTeam/AdguardFilters/issues/66369
@@ -9009,9 +9009,9 @@ camarchive.tv#%#//scriptlet("set-constant", "canads", "true")
 megafile.io#%#//scriptlet("set-constant", "replaceContentWithAdBlockerContent", "noopFunc")
 ! https://github.com/uBlockOrigin/uAssets/issues/7308#issuecomment-778989942
 ! streamtape.com domains
-!+ PLATFORM(mac, windows, android)
+!+ PLATFORM(windows, mac, android, cli)
 advertape.net,tapepops.com,watchadsontape.com,advertisertape.com,tapeadvertisement.com,adblockplustape.xyz,tapelovesads.org,gettapeads.com,tapeadsenjoyer.com,noblocktape.com,antiadtape.com,tapewithadblock.org,streamadblocker.*,strtape.cloud,adblockeronstape.me,streamadblockplus.com,shavetape.*,adblockstrtape.link,adblockstrtech.link,adblockstreamtape.*,stape.fun,strcloud.link,streamtape.*,streamtape.com$$script[wildcard="*window*googleAd*"]
-!#if (!adguard_app_mac && !adguard_app_windows && !adguard_app_android)
+!#if (!adguard_app_mac && !adguard_app_windows && !adguard_app_android && !adguard_app_cli)
 advertape.net,tapepops.com,watchadsontape.com,advertisertape.com,tapeadvertisement.com,adblockplustape.xyz,tapelovesads.org,gettapeads.com,tapeadsenjoyer.com,noblocktape.com,antiadtape.com,tapewithadblock.org,streamadblocker.*,strtape.cloud,adblockeronstape.me,streamadblockplus.com,shavetape.*,adblockstrtape.link,adblockstrtech.link,adblockstreamtape.*,stape.fun,strcloud.link,streamtape.*,streamtape.com#%#//scriptlet("abort-current-inline-script", "document.createElement", "adblock")
 advertape.net,tapepops.com,watchadsontape.com,advertisertape.com,tapeadvertisement.com,adblockplustape.xyz,tapelovesads.org,gettapeads.com,tapeadsenjoyer.com,noblocktape.com,antiadtape.com,tapewithadblock.org,streamadblocker.*,strtape.cloud,adblockeronstape.me,streamadblockplus.com,shavetape.*,adblockstrtape.link,adblockstrtech.link,adblockstreamtape.*,stape.fun,strcloud.link,streamtape.*,streamtape.com#%#//scriptlet("prevent-setInterval", "adblock", "700")
 !#endif
@@ -9162,7 +9162,7 @@ dropgalaxy.com#%#//scriptlet("set-constant", "_VLIOBJ", "emptyObj")
 ! Disabled due to error: https://github.com/AdguardTeam/AdguardFilters/issues/199912#issue-2891266952
 !rfiql.com,miuiflash.com,djxmaza.in,smartfeecalculator.com#%#//scriptlet('abort-current-inline-script', 'document.getElementById', 'window.open(adurl')
 !#endif
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli)
 dropgalaxy.com##.pgAdWrapper
 !#endif
 ! For DNS filtering
@@ -9266,7 +9266,7 @@ javtiful.com#%#//scriptlet("prevent-addEventListener", "DOMContentLoaded", "adsB
 ! https://github.com/AdguardTeam/AdguardFilters/issues/52997
 @@||habbokritik.de/FuckAdBlock/fuckadblock.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/52878
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_ext_firefox)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli && !adguard_ext_firefox)
 @@||tstrs.me/img/*#/
 @@||tstrs.me^$generichide
 !#endif
@@ -9445,7 +9445,7 @@ joblo.com#%#//scriptlet("abort-current-inline-script", "document.body.appendChil
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noopjs,important,domain=joblo.com
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=joblo.com
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 @@||rddywd.com/adcode.png$domain=joblo.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/48008
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=player.glomex.com
@@ -9457,12 +9457,12 @@ rong-chang.com###content > div > table:nth-child(3)
 ||cdn.rawgit.com/perampokgoogle/AntiAdblock/master/AdblockRampok.js
 ! sickworldmusic.com - antiadblock
 sickworldmusic.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "ad blocker")
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 @@||sickworldmusic.com^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/47144
-!+ PLATFORM(windows, mac, android, ext_chromium, ext_ff, ext_opera)
+!+ PLATFORM(windows, mac, android, cli, ext_chromium, ext_ff, ext_opera)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noopjs,important,domain=radiotunes.com
-!+ NOT_PLATFORM(windows, mac, android, ext_chromium, ext_ff, ext_opera)
+!+ NOT_PLATFORM(windows, mac, android, cli, ext_chromium, ext_ff, ext_opera)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=radiotunes.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/47331
 !+ PLATFORM(ext_opera, ios, ext_android_cb, ext_safari)
@@ -9567,9 +9567,9 @@ sadeempc.com#$?#body[style*="visibility"] { visibility: visible!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/44048
 @@||kxcdn.com/js/wutime_adblock/ads.js$domain=enxf.net
 ! https://github.com/AdguardTeam/AdguardFilters/issues/44003
-!+ PLATFORM(windows, mac, android, ext_chromium, ext_ff, ext_opera)
+!+ PLATFORM(windows, mac, android, cli, ext_chromium, ext_ff, ext_opera)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noopjs,important,domain=jazzradio.com
-!+ NOT_PLATFORM(windows, mac, android, ext_chromium, ext_ff, ext_opera)
+!+ NOT_PLATFORM(windows, mac, android, cli, ext_chromium, ext_ff, ext_opera)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=jazzradio.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/102126
 ! https://github.com/AdguardTeam/AdguardFilters/issues/53221
@@ -9592,9 +9592,9 @@ pch.com#%#//scriptlet("abort-current-inline-script", "pAPI", "location")
 pch.com$$script[tag-content="if (window.PCH) breakingRuleActive = false;"]
 pch.com$$script[tag-content="return h.hasOwnProperty('pAPI')"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/43723
-!+ PLATFORM(windows, mac, android, ext_chromium, ext_ff, ext_opera)
+!+ PLATFORM(windows, mac, android, cli, ext_chromium, ext_ff, ext_opera)
 ||adservice.google.com/adsid/integrator.js$script,redirect=noopjs,important,domain=943thex.com
-!+ NOT_PLATFORM(windows, mac, android, ext_chromium, ext_ff, ext_opera)
+!+ NOT_PLATFORM(windows, mac, android, cli, ext_chromium, ext_ff, ext_opera)
 @@||adservice.google.com/adsid/integrator.js$domain=943thex.com
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||943thex.com^$generichide
@@ -9746,7 +9746,7 @@ younetu.*,waaw.to,meucdn.vip,yandexcdn.com,waaw1.tv,waaw.tv,hqq.tv#%#//scriptlet
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=hqq.tv|waaw.tv
 ||deliver.vkcdnservice.com/vast-im.js$script,redirect=noopjs,domain=meucdn.vip|yandexcdn.com|waaw.to|waaw1.tv|waaw.tv|hqq.tv
 ! Redirect rule is not required for apps, because script with onerror event is removed from website
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 ||googletagmanager.com/ns.html?id=GTM-$script,redirect-rule=noopjs
 !+ NOT_PLATFORM(ext_edge, ext_ublock)
 ||vkcdnservice.com/api/spots/$redirect=noopjs,domain=waaw.to|waaw1.tv|waaw.tv|hqq.tv
@@ -9895,7 +9895,7 @@ ebates.ca#@#.google-ads
 !+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_safari, ext_ublock)
 @@.png#$domain=fforfree.net
 ! https://github.com/AdguardTeam/AdguardFilters/issues/35273
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 @@||theseotools.net^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/35212
 !+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_safari, ext_ublock)
@@ -9957,7 +9957,7 @@ fstore.biz#@##bannerad
 !+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_safari, ext_ublock)
 @@||akoam.ws^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/34464
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 @@||vnhax.com^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/34429
 @@||satellite-calculations.com/ads.js
@@ -9980,11 +9980,11 @@ yepi.com#%#//scriptlet("set-constant", "evitca_kcolbda", "false")
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||pitbullofficial.com^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/98062
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli)
 @@||freevpn4you.net/*/advt.png
 freevpn4you.net#$##adbanner { display: block !important; }
 !#endif
-!+ PLATFORM(windows, mac, android)
+!+ PLATFORM(windows, mac, android, cli)
 ||freevpn4you.net/*.php$replace=/ins\.clientHeight =/ins.clientHeight !/
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||freevpn4you.net^$generichide
@@ -10191,7 +10191,7 @@ memoryhackers.org#@#.pub_300x250
 @@||nullpress.net^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/31052
 pornbimbo.com#%#//scriptlet("set-constant", "flashvars.protect_block", "")
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 @@||pornbimbo.com/player/player_ads.html
 ! https://github.com/AdguardTeam/AdguardFilters/issues/30966
 !+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_safari, ext_ublock)
@@ -10358,7 +10358,7 @@ hanime.tv#@#.banner-ad
 !+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_safari, ext_ublock)
 @@||techreviewpro.com^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/27797
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 @@||nulledteam.com^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/27643
 ||googletagmanager.com/gtag/$domain=strikeout.nu
@@ -10382,12 +10382,12 @@ a2zapk.com$$script[tag-content="'Adblock','Enabled'"][min-length="5000"][max-len
 @@||a2zapk.com/images/$image,domain=a2zupload.com
 ! if DNS filtering enabled
 ||tpc.googlesyndication.com/simgad/*?w=*&h=$domain=a2zupload.com,redirect=1x1-transparent.gif,important
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli)
 @@||tpc.googlesyndication.com/simgad/$image,domain=a2zupload.com|unlockapk.com
 @@||adsterra.com/images/*.png$image,domain=unlockapk.com
 @@||static.popads.net/img/icons/menu/websites.png$domain=a2zupload.com
 !#endif
-!#if (adguard_app_windows || adguard_app_mac || adguard_app_android)
+!#if (adguard_app_windows || adguard_app_mac || adguard_app_android || adguard_app_cli)
 ||adsterra.com/*.jpg$redirect=nooptext,important,domain=unlockapk.com|a2zapk.com
 ||popads.net/*.jpg$redirect=nooptext,important,domain=unlockapk.com|a2zapk.com
 ||steepto.com/g/$redirect=nooptext,important,domain=unlockapk.com|a2zupload.com
@@ -10395,9 +10395,9 @@ a2zapk.com$$script[tag-content="'Adblock','Enabled'"][min-length="5000"][max-len
 ||doubleclick.net/*.jpg$redirect=nooptext,important,domain=unlockapk.com
 ||googleads.g.doubleclick.net/pagead/$image,redirect=nooptext,important,domain=unlockapk.com
 !#endif
-!+ PLATFORM(windows, mac, android, ext_chromium)
+!+ PLATFORM(windows, mac, android, cli, ext_chromium)
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=noopjs,important,domain=unlockapk.com|a2zupload.com
-!+ NOT_PLATFORM(windows, mac, android, ext_chromium)
+!+ NOT_PLATFORM(windows, mac, android, cli, ext_chromium)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=unlockapk.com
 @@||unlockapk.com/*ads.js
 unlockapk.com###aswift_2_expand
@@ -10411,7 +10411,7 @@ a2zupload.com,unlockapk.com#$##adsenseimage { height: 1px!important; }
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 @@||broncos.com.au^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/26990
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 @@||freshstuff4you.com^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/51300
 ! https://github.com/AdguardTeam/AdguardFilters/issues/27060
@@ -10493,7 +10493,7 @@ uploadbox.io#%#//scriptlet('set-constant', 'replaceContentWithAdBlockerContent',
 dexterclearance.com#$##ads { height: 1px!important; }
 ! https://github.com/AdguardTeam/AdguardFilters/issues/25923
 receive-sms-online.info$$script[wildcard="*document.getElementsByTagName*AdBlock*"][max-length="1200"]
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 @@||google-analytics.com/analytics.js$domain=receive-sms-online.info
 ! https://github.com/AdguardTeam/AdguardFilters/issues/25765
 !+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_ublock)
@@ -10735,7 +10735,7 @@ ebook3000.biz##.swal2-fade
 ! https://github.com/AdguardTeam/AdguardFilters/issues/21671
 @@||firstonetv.net^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/21628
-!+ NOT_PLATFORM(windows, mac, android, ext_ff)
+!+ NOT_PLATFORM(windows, mac, android, cli, ext_ff)
 pcmag.com#@#iframe[title="3rd party ad content"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/21422
 @@||pngtosvg.com/wp-content/plugins/ad-inserter^
@@ -10763,7 +10763,7 @@ mhtviewer.booogle.net,kmlviewer.nsspot.net,epubreader.1bestlink.net,imagetotext.
 ! https://github.com/AdguardTeam/AdguardFilters/issues/20955
 @@||lunaticfiles.com/ads.js|
 ! https://github.com/AdguardTeam/AdguardFilters/issues/21030
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 @@||everydayporn.co/player/player_ads.html
 ! https://github.com/AdguardTeam/AdguardFilters/issues/20966
 @@||vb.icdrama.se/advertisement.js
@@ -11012,7 +11012,7 @@ hotcars.com#@#.AdSense
 !+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_safari)
 @@||visionias.net^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/16676
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 @@||pagead2.googlesyndication.com/pagead/$domain=nationalpost.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/16832
 !+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb)
@@ -11087,7 +11087,7 @@ thememypc.net#$#.ABD_display_noadblock { display: block!important; }
 @@||thememypc.net/wp-content/plugins/nervous-pleasure/assets/js/advertisement.min.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/15046
 /^https?:\/\/anonymousemail\.me\/[\S]{3,10}\.js$/$important,domain=anonymousemail.me
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 @@||benkhouya.com/ads.js$domain=anonymousemail.me
 ! https://github.com/AdguardTeam/AdguardFilters/issues/15242
 rentanadviser.com#$#.reklamcontainer { height: 1px!important; }
@@ -11235,7 +11235,7 @@ magesypro.com,magesy.blog,magesy.eu#%#//scriptlet("abort-current-inline-script",
 magesypro.com,magesy.blog,magesy.eu#%#//scriptlet('abort-current-inline-script', 'document.getElementById', 'document.write')
 majesy.com,magesy.eu#%#//scriptlet("set-constant", "jQuery.adblock", "false")
 @@/ad_banner.js$~third-party,domain=magesypro.com|magesy.blog|magesy.eu
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli)
 @@||majesy.com^$generichide
 @@||magesy.eu^$generichide
 @@||magesy.blog^$generichide
@@ -11569,7 +11569,7 @@ leechpremium.net#$#.adsbygoogle { position: absolute!important; left: -3000px!im
 myuploadedpremium.de#%#//scriptlet('remove-attr', 'height', 'body > iframe[height][width][style]')
 myuploadedpremium.de#%#//scriptlet('abort-current-inline-script', '$', '/setInterval[\s\S]*?_0x[\s\S]*?</')
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$redirect=googlesyndication-adsbygoogle,domain=myuploadedpremium.de
-!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_ext_chromium)
+!#if (!adguard_app_windows && !adguard_app_mac && !adguard_app_android && !adguard_app_cli && !adguard_ext_chromium)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=myuploadedpremium.de
 @@||pagead2.googlesyndication.com/pagead/js/r*/show_ads_impl_*.js$domain=myuploadedpremium.de
 myuploadedpremium.de#$#.adsbygoogle { position: absolute!important; left: -3000px!important; }
@@ -11822,11 +11822,11 @@ openculture.com#@##SponsoredLinks
 openculture.com#@##influads_block
 !
 gktoday.in$$script[tag-content="function an_blocker_counter"][max-length="15500"]
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 gktoday.in#@##google-ads
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 gktoday.in#@#.adsense
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 gktoday.in#@#.sponsored
 ! https://github.com/AdguardTeam/AdguardFilters/issues/5508
 @@||cdn.reverso.net/*/static/js/advertising.js^
@@ -11883,7 +11883,7 @@ uploadfiles.io##.ad-blocked
 gosugamers.net#@#.ad-placement
 ! https://forum.adguard.com/index.php?threads/22624/
 receive-sms-online.info$$script[tag-content="other adblocking software"][max-length="600"]
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=receive-sms-online.info
 !
 ! https://forum.adguard.com/index.php?threads/22596/

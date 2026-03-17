@@ -2137,13 +2137,13 @@ http://w7.ru^$third-party
 !
 ! Ads reinjection (For apps only)
 !
-!#if (adguard_app_windows || adguard_app_mac || adguard_app_android)
+!#if (adguard_app_windows || adguard_app_mac || adguard_app_android || adguard_app_cli)
 ||greencuttlefish.com^$third-party
 !#endif
 !
 !+ PLATFORM(ios, ext_android_cb, ext_safari)
 adbetnet.com$third-party
-!+ NOT_PLATFORM(windows, mac, android)
+!+ NOT_PLATFORM(windows, mac, android, cli)
 ||greencuttlefish.com^$third-party,~xmlhttprequest
 !+ NOT_PLATFORM(ios, ext_android_cb, ext_safari)
 ||cpm.wargaming.net^$third-party
