@@ -1,10 +1,11 @@
 {
+    "//": "Security fixes: GHSA-v6h2-p8h4-qcjw, GHSA-5j98-mcp5-4vw2, GHSA-mh29-5h37-fv8m, GHSA-38c4-r59v-3vqw, GHSA-3ppc-4f35-3m26",
     "name": "@adguard/filters",
     "author": "AdGuard Software Ltd.",
     "license": "GPL-3.0-only",
     "type": "module",
     "engines": {
-        "node": ">=20.0.0"
+        "node": ">=18.0.0"
     },
     "repository": {
         "type": "git",
@@ -15,7 +16,7 @@
     },
     "homepage": "https://github.com/AdguardTeam/AdguardFilters#readme",
     "scripts": {
-        "aglint": "aglint --cache --cache-location .aglintcache --cache-strategy content \"**/*.txt\"",
+        "aglint": "aglint",
         "markdownlint": "markdownlint .",
         "lint": "npm run aglint && npm run markdownlint",
         "prepare": "node .husky/install.js"
@@ -25,10 +26,17 @@
         "*.md": "markdownlint"
     },
     "devDependencies": {
-        "@adguard/aglint": "4.0.0-beta.5",
-        "husky": "^9.1.7",
-        "lint-staged": "^16.3.2",
-        "markdownlint": "^0.40.0",
-        "markdownlint-cli": "^0.48.0"
+        "@adguard/aglint": "3.0.2",
+        "husky": "9.1.7",
+        "lint-staged": "16.2.6",
+        "markdownlint": "0.40.0",
+        "markdownlint-cli": "0.48.0"
+    },
+    "overrides": {
+        "minimatch": "10.2.4",
+        "markdown-it": "14.1.1",
+        "js-yaml": "4.1.1",
+        "brace-expansion": "5.0.4",
+        "balanced-match": "4.0.4"
     }
 }

@@ -30,7 +30,7 @@
 
 ### Enter the issue address
 
-Example: Fix <https://github.com/AdguardTeam/AdguardFilters/issues/100000>
+Example: <https://github.com/AdguardTeam/AdguardFilters/issues/100000>
 
 ### Add your comment and screenshots
 
