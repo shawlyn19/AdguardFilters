@@ -7,7 +7,6 @@
 ! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
 !
 !
-||sqrt-5041.de^
 ||tizofvtuqo.com^
 ||ads.goldbach-germany.de^
 ||remp-campaign.golem.de^
@@ -29,6 +28,7 @@
 ||cockpit.symplr.de^$third-party
 ||afl-static-cdn.newbiz-prod.stroeerws.de^$third-party
 ||embed.contentverticals.de^$third-party
+||ablyft.com^$third-party
 ||tikibihu.com^$third-party
 ||partners2.das-onlinespiel.de^$third-party
 ||intextlinks.idg.zone^$third-party

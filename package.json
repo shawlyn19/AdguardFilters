@@ -5,7 +5,7 @@
     "license": "GPL-3.0-only",
     "type": "module",
     "engines": {
-        "node": ">=20.0.0"
+        "node": ">=18.0.0"
     },
     "repository": {
         "type": "git",
@@ -16,7 +16,7 @@
     },
     "homepage": "https://github.com/AdguardTeam/AdguardFilters#readme",
     "scripts": {
-        "aglint": "aglint --cache --cache-location .aglintcache --cache-strategy content \"**/*.txt\"",
+        "aglint": "aglint",
         "markdownlint": "markdownlint .",
         "lint": "npm run aglint && npm run markdownlint",
         "prepare": "node .husky/install.js"
@@ -38,10 +38,5 @@
         "js-yaml": "4.1.1",
         "brace-expansion": "5.0.4",
         "balanced-match": "4.0.4"
-        "@adguard/aglint": "4.0.0-beta.5",
-        "husky": "^9.1.7",
-        "lint-staged": "^16.3.2",
-        "markdownlint": "^0.40.0",
-        "markdownlint-cli": "^0.48.0"
     }
 }

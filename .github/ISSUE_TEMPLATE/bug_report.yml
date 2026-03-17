@@ -27,7 +27,7 @@ body:
       options:
         - AdGuard Browser Extension
         - AdGuard Content Blocker
-        - AdGuard CLI for Linux
+        - AdGaurd CLI for Linux
         - AdGuard DNS
         - AdGuard for Android
         - AdGuard for iOS
