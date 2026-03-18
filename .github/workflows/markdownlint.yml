@@ -3,6 +3,9 @@ name: markdownlint
 env:
   NODE_VERSION: 24
 
+permissions:
+  contents: read
+
 on:
   push:
     branches:
