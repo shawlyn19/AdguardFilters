@@ -13,6 +13,9 @@
 
 name: Run Datadog Synthetic tests
 
+permissions:
+  contents: read
+
 on:
   push:
     branches: [ "master" ]
@@ -24,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v4.2.2
 
     # Run Synthetic tests within your GitHub workflow.
     # For additional configuration options visit the action within the marketplace: https://github.com/marketplace/actions/datadog-synthetics-ci
