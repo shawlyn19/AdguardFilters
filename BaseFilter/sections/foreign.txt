@@ -3660,8 +3660,6 @@ hindikhabarwaala.com##.post-content > div.post-text > p > img[src^="http://hindi
 ! https://github.com/AdguardTeam/AdguardFilters/issues/79204
 thebharatnews.net##.textwidget > p > img[class*="wp-image"]
 thebharatnews.net##a[rel="bookmark"][style^="background-image: url("]
-! https://github.com/AdguardTeam/AdguardFilters/issues/79165
-aajtak.in##.event_home_banner
 ! https://github.com/AdguardTeam/AdguardFilters/issues/22120
 hindi.business-standard.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "displayMessage:")
 !+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_ublock)
@@ -4086,6 +4084,8 @@ bb.is$$div[class="banner"]
 !
 ! NOTE: Indian
 !
+indiaglitz.com##.mrb-banners-wrapper
+cinejosh.com##header > .container:has(> div > .googleAdsSponsered)
 tupaki.com##div[class^="inside-post-ad-"]
 tupaki.com##.paira-h4 > p:has(> br)
 ||tracktollywood.com/wp-content/cache/min/1/wp-content/plugins/tt-splash-screen/
@@ -4426,6 +4426,7 @@ indiatimes.com##.last8brdiv > div.sponsor_block
 !
 ! NOTE: Indonesian
 !
+ainzscans01.com##div[data-ads-placement-slot]
 indopanas.cyou#%#//scriptlet('set-constant', 'prerollActive', 'false')
 moenime.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'ad_limit')
 moenime.com#$?#body > div[class]:not([id]) > dialog[class][open] { remove: true; }
@@ -4862,8 +4863,6 @@ inews.id##.ads_sticky_footer
 ! https://github.com/AdguardTeam/AdguardFilters/issues/50159
 katadata.co.id##.center-belt
 katadata.co.id##.footer_sticky
-! https://github.com/AdguardTeam/AdguardFilters/issues/48923
-157.245.202.123#%#//scriptlet("abort-current-inline-script", "decodeURI", "4zz.")
 ! https://github.com/AdguardTeam/AdguardFilters/issues/48650
 pradjadj.com##.widget_abd_shortcode_widget
 pradjadj.com#%#//scriptlet("set-constant", "google_jobrunner", "noopFunc")
@@ -6984,6 +6983,11 @@ roweroweporady.pl#@#.ad_container
 @@||lib.wtg-ads.com/prebid/prebid_*.js$domain=tvn.pl
 !
 !
+atlasetf.pl##a.nav-link[target="_blank"] > img
+forexclub.pl###a_flex
+forexclub.pl###header_widget-6
+forexclub.pl###header_widget-18
+forexclub.pl##aside > div.widget:has(> div > a[href^="/?ad="])
 morizon.pl##.banner-placeholder
 android.com.pl##a[href^="https://and.co.pl/"][rel*="sponsored"]
 android.com.pl##.products-feed__tag
@@ -9797,6 +9801,8 @@ businessinsider.com.pl##.adsContainer
 businessinsider.com.pl##.adSlotWidget
 businessinsider.com.pl###main > .sH_bottom_first
 businessinsider.com.pl##[class*="placeholder"][data-configuration*="slotName"][data-run-module$="Ad"]
+businessinsider.com.pl##.gratka-widget-placeholder
+||gratka.pl/feed/$domain=businessinsider.com.pl
 ! https://github.com/AdguardTeam/AdguardFilters/issues/75192
 portal-polski.pl##a[href^="https://webep1.com/"] > img
 portal-polski.pl#$#.hustle_module_id_4 { display: none !important; }

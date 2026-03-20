@@ -167,6 +167,8 @@ dlsdk.appsflyer.com^
 !
 ! NOTE: Regular rules
 !
+||sensor.photogrid.app^
+||sensor.aqhg.online^
 ||log-nontt.bytegsdk.com^
 ||gpm-mon-va.bytegsdk.com^
 ||gplog-sg.byteoversea.com^

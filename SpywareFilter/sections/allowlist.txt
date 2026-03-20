@@ -18,6 +18,8 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/227280
+@@||api.cxense.com/public/widget/$domain=tv-tokyo.co.jp
 ! https://github.com/AdguardTeam/AdguardFilters/issues/227097
 n11.com#%#//scriptlet('prevent-addEventListener', 'click', 'ownerDocument', 'elements', 'a.product-card[href]')
 !+ PLATFORM(ios, ext_android_cb, ext_safari)

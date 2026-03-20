@@ -205,7 +205,6 @@ cdn.braun634.com^$third-party
 @@||feyorra.top^$generichide
 @@||dizipal*.com^$generichide
 @@||descargaspcpro.net^$generichide
-@@||pinayvids.com^$generichide
 @@||bagi.co.in^$generichide
 @@||egydead.com^$generichide
 @@||fatcatslim.ru^$generichide
@@ -225,7 +224,6 @@ cdn.braun634.com^$third-party
 @@||dogestar.website^$generichide
 @@||blog.krcesdev.com^$generichide
 @@||faucet.plus^$generichide
-@@||crypto-fun-faucet.de^$generichide
 @@||nyaa.net^$generichide
 @@||omgexploits.com^$generichide
 @@||tekfiz.com^$generichide
@@ -259,7 +257,6 @@ cdn.braun634.com^$third-party
 @@||pcso-lottoresults.com^$generichide
 @@||jagoanssh.com^$generichide
 @@||cryptojunkie.net^$generichide
-@@||99btc.top^$generichide
 @@||dynamicpapers.com^$generichide
 @@||wouterplanet.com^$generichide
 @@||coinles.com^$generichide
@@ -303,7 +300,6 @@ cdn.braun634.com^$third-party
 @@||significatocanzoni.it^$generichide
 @@||kpopstan.com^$generichide
 @@||javadecompilers.com^$generichide
-@@||thepoorcoder.com^$generichide
 @@||reactgo.com^$generichide
 @@||goalpro-demo.blogspot.com^$generichide
 @@||hugo3c.tw^$generichide
@@ -323,13 +319,11 @@ cdn.braun634.com^$third-party
 @@||csgo-ranks.com^$generichide
 @@||hakie.net^$generichide
 @@||safetxt.net^$generichide
-@@||nodkey.xyz^$generichide
 @@||raphsonbd.com^$generichide
 @@||unity3diy.blogspot.com^$generichide
 @@||vviruslove.com^$generichide
 @@||shrinkurl.org^$generichide
 @@||yannik.biz^$generichide
-@@||planet-streaming1.com^$generichide
 @@||anonymous-links.com^$generichide
 @@||series-streaminghd.com^$generichide
 @@||iptunnels.com^$generichide
@@ -357,7 +351,6 @@ cdn.braun634.com^$third-party
 @@||rahim-soft.com^$generichide
 @@||mondainai.moe^$generichide
 @@||belajarbro.id^$generichide
-@@||animesanka.club^$generichide
 @@||myuploadedpremium.de^$generichide
 @@||freeomovie.to^$generichide
 @@||leechpremium.link^$generichide
@@ -384,7 +377,6 @@ cdn.braun634.com^$third-party
 @@||business-mortgage.pw^$generichide
 @@||credits-loan.pw^$generichide
 @@||business-credits.cc^$generichide
-@@||loan-trading.net^$generichide
 @@||mmo-population.com^$generichide
 @@||memoriadatv.com^$generichide
 @@||sarapbabe.com^$generichide
@@ -430,7 +422,6 @@ cdn.braun634.com^$third-party
 @@||gvmp.de^$generichide
 @@||erovoice.us^$generichide
 @@||comptoir-hardware.com^$generichide
-@@||157.245.202.123^$generichide
 @@||apkgezegeni.com^$generichide
 @@||vstx.ru^$generichide
 @@||courseforfree.com^$generichide
@@ -567,7 +558,6 @@ king-shoot.tv#@##ads_top
 @@||telecinetorrent.ucoz.com^$generichide
 @@||total-sportek.to^$generichide
 @@||hyogo.ie-t.net^$generichide
-@@||tiroalpaloweb.xyz^$generichide
 @@||veo-hentai.com^$generichide
 @@||uploadmall.com^$generichide
 @@||tiroalpaloes.net^$generichide
@@ -593,7 +583,6 @@ king-shoot.tv#@##ads_top
 @@||haafedk2.com^$generichide
 @@||k-ba.net^$generichide
 @@||codesnse.com^$generichide
-@@||yalla-kora.tv^$generichide
 @@||yoima.hatenadiary.com^$generichide
 @@||hdrez.com^$generichide
 @@||klartext-ne.de^$generichide
@@ -830,7 +819,6 @@ king-shoot.tv#@##ads_top
 @@||king-pes.blogspot.com^$generichide
 @@||kpliker.net^$generichide
 @@||ktmx.pro^$generichide
-@@||latornamesa.blogspot.com^$generichide
 @@||letras2.com^$generichide
 @@||lib.hatenablog.com^$generichide
 @@||link-to.net^$generichide
@@ -1252,10 +1240,6 @@ hentaihaven.com#@#.adContent
 @@||app.medyanetads.com/Session$domain=mackolik.com
 @@||app.medyanetads.com/Session?publisher=$domain=sahadan.com
 @@||go.admost.com/adx/get.ashx&accptck$domain=sahadan.com
-! https://github.com/AdguardTeam/AdguardFilters/issues/88037
-@@||thepoorcoder.com^$generichide
-thepoorcoder.com##.adtester-container
-thepoorcoder.com##.side-ad
 ! https://github.com/AdguardTeam/AdguardFilters/issues/86828
 @@||tutflix.org/js/*/showflashad.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/86502
@@ -1776,8 +1760,6 @@ abc.es#@#.div-gpt-ad
 denofgeek.com#@#.plainAd
 ! https://github.com/AdguardTeam/AdguardFilters/issues/36644
 @@||nu.nl/static/js/advertising.js
-! https://github.com/AdguardTeam/AdguardFilters/issues/19960
-@@||bolgegundem.com/s/advertisement.js
 ! ! https://github.com/AdguardTeam/AdguardFilters/issues/35046
 @@||rp5.by^$generichide
 @@||rp5.kz^$generichide
@@ -1836,8 +1818,6 @@ lubetube.com##.sidead
 manta.com##.adsbygoogle
 ! https://github.com/AdguardTeam/AdguardFilters/issues/10728
 @@||pressgazette.co.uk^$generichide
-! https://github.com/AdguardTeam/AdguardFilters/issues/9833
-@@||food-tiger.de^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/9534
 pallok.com##.adsbygoogle
 @@||pallok.com^$generichide
@@ -1888,7 +1868,6 @@ mathb-ege.sdamgia.ru##.content >div[style="margin-bottom:20px"] > div[style="wid
 ! wordpress theme https://mythemeshop.com/themes/ad-sense/
 @@||adisteme.kz^$generichide
 @@||adobevn.net^$generichide
-@@||allbluevr.com^$generichide
 @@||applosungen.com^$generichide
 @@||awamiweb.com^$generichide
 @@||besthealthyguide.com^$generichide
@@ -1928,7 +1907,6 @@ mathb-ege.sdamgia.ru##.content >div[style="margin-bottom:20px"] > div[style="wid
 @@||ofertasahora.com^$generichide
 @@||orduh.com^$generichide
 @@||organichealthcorner.com^$generichide
-@@||otimundo.com^$generichide
 @@||ovnihoje.com^$generichide
 @@||parhaye.com^$generichide
 @@||prdnews.com^$generichide
@@ -2080,10 +2058,8 @@ latimes.com##.google-dfp-ad-caption
 @@||duniailkom.com^$generichide
 @@||enciclopediaonline.com^$generichide
 @@||eyalo.com^$generichide
-@@||fosslovers.com^$generichide
 @@||fotopixel.es^$generichide
 @@||freeiphone.fr^$generichide
-@@||hairstylesthatwork.com^$generichide
 @@||ichberlin.com^$generichide
 @@||indostarmedia.com^$generichide
 @@||ireez.com^$generichide
@@ -2101,12 +2077,10 @@ latimes.com##.google-dfp-ad-caption
 @@||rencah.com^$generichide
 @@||sarkarinaukry.com^$generichide
 @@||seamanmemories.com^$generichide
-@@||socialmediaverve.com^$generichide
 @@||solnechnyj-kitaj.ru^$generichide
 @@||thefoodstorydotcom.wpcomstaging.com^$generichide
 @@||theorie-musik.de^$generichide
 @@||topperpoint.com^$generichide
-@@||transformator220.ru^$generichide
 @@||vita-water.ru^$generichide
 @@||udoyoshi.com^$generichide
 @@||javhoho.com^$generichide
@@ -2114,29 +2088,28 @@ latimes.com##.google-dfp-ad-caption
 @@||buydekhke.com^$generichide
 @@||plugincrack.com^$generichide
 @@||g.doubleclick.net/tag/js/gpt.js$domain=ccthesims.com
-@@/wp-content/plugins/ad-inserter/*$domain=plugincrack.com|buydekhke.com|isekaisubs.web.id|javhoho.com|udoyoshi.com|adrianoluis.net|animecast.net|armyranger.com|boxylucha.com|duniailkom.com|enciclopediaonline.com|eyalo.com|fosslovers.com|fotopixel.es|freeiphone.fr|hairstylesthatwork.com|ichberlin.com|indostarmedia.com|ireez.com|keepkoding.com|latribunadeautomocion.es|linemarlin.com|lumpiastudio.com|mobility.com.ng|mygardening411.com|newstvonline.com|organismes.org|papagiovannipaoloii.altervista.org|pictasty.com|playlists.rocks|rencah.com|sarkarinaukry.com|seamanmemories.com|socialmediaverve.com|solnechnyj-kitaj.ru|thefoodstorydotcom.wpcomstaging.com|theorie-musik.de|topperpoint.com|transformator220.ru|vita-water.ru|googledrivelinks.com|ccthesims.com|papunika.com
-@@||contextual.media.net/dmedianet.js$domain=plugincrack.com|buydekhke.com|isekaisubs.web.id|javhoho.com|udoyoshi.com|adrianoluis.net|animecast.net|armyranger.com|boxylucha.com|duniailkom.com|enciclopediaonline.com|eyalo.com|fosslovers.com|fotopixel.es|freeiphone.fr|hairstylesthatwork.com|ichberlin.com|indostarmedia.com|ireez.com|keepkoding.com|latribunadeautomocion.es|linemarlin.com|lumpiastudio.com|mobility.com.ng|mygardening411.com|newstvonline.com|organismes.org|papagiovannipaoloii.altervista.org|pictasty.com|playlists.rocks|rencah.com|sarkarinaukry.com|seamanmemories.com|socialmediaverve.com|solnechnyj-kitaj.ru|thefoodstorydotcom.wpcomstaging.com|theorie-musik.de|topperpoint.com|transformator220.ru|vita-water.ru|googledrivelinks.com|ccthesims.com|papunika.com
-@@||ib.adnxs.com^$image,domain=plugincrack.com|buydekhke.com|isekaisubs.web.id|javhoho.com|udoyoshi.com|adrianoluis.net|animecast.net|armyranger.com|boxylucha.com|duniailkom.com|enciclopediaonline.com|eyalo.com|fosslovers.com|fotopixel.es|freeiphone.fr|hairstylesthatwork.com|ichberlin.com|indostarmedia.com|ireez.com|keepkoding.com|latribunadeautomocion.es|linemarlin.com|lumpiastudio.com|mobility.com.ng|mygardening411.com|newstvonline.com|organismes.org|papagiovannipaoloii.altervista.org|pictasty.com|playlists.rocks|rencah.com|sarkarinaukry.com|seamanmemories.com|socialmediaverve.com|solnechnyj-kitaj.ru|thefoodstorydotcom.wpcomstaging.com|theorie-musik.de|topperpoint.com|transformator220.ru|vita-water.ru|googledrivelinks.com|ccthesims.com|papunika.com
-@@||router.infolinks.com/dyn/apn-usync?$image,domain=plugincrack.com|buydekhke.com|isekaisubs.web.id|javhoho.com|udoyoshi.com|adrianoluis.net|animecast.net|armyranger.com|boxylucha.com|duniailkom.com|enciclopediaonline.com|eyalo.com|fosslovers.com|fotopixel.es|freeiphone.fr|hairstylesthatwork.com|ichberlin.com|indostarmedia.com|ireez.com|keepkoding.com|latribunadeautomocion.es|linemarlin.com|lumpiastudio.com|mobility.com.ng|mygardening411.com|newstvonline.com|organismes.org|papagiovannipaoloii.altervista.org|pictasty.com|playlists.rocks|rencah.com|sarkarinaukry.com|seamanmemories.com|socialmediaverve.com|solnechnyj-kitaj.ru|thefoodstorydotcom.wpcomstaging.com|theorie-musik.de|topperpoint.com|transformator220.ru|vita-water.ru|googledrivelinks.com|ccthesims.com|papunika.com
+@@/wp-content/plugins/ad-inserter/*$domain=plugincrack.com|buydekhke.com|isekaisubs.web.id|javhoho.com|udoyoshi.com|adrianoluis.net|animecast.net|armyranger.com|boxylucha.com|duniailkom.com|enciclopediaonline.com|eyalo.com|fotopixel.es|freeiphone.fr|ichberlin.com|indostarmedia.com|ireez.com|keepkoding.com|latribunadeautomocion.es|linemarlin.com|lumpiastudio.com|mobility.com.ng|mygardening411.com|newstvonline.com|organismes.org|papagiovannipaoloii.altervista.org|pictasty.com|playlists.rocks|rencah.com|sarkarinaukry.com|seamanmemories.com|solnechnyj-kitaj.ru|thefoodstorydotcom.wpcomstaging.com|theorie-musik.de|topperpoint.com|vita-water.ru|googledrivelinks.com|ccthesims.com|papunika.com
+@@||contextual.media.net/dmedianet.js$domain=plugincrack.com|buydekhke.com|isekaisubs.web.id|javhoho.com|udoyoshi.com|adrianoluis.net|animecast.net|armyranger.com|boxylucha.com|duniailkom.com|enciclopediaonline.com|eyalo.com|fotopixel.es|freeiphone.fr|ichberlin.com|indostarmedia.com|ireez.com|keepkoding.com|latribunadeautomocion.es|linemarlin.com|lumpiastudio.com|mobility.com.ng|mygardening411.com|newstvonline.com|organismes.org|papagiovannipaoloii.altervista.org|pictasty.com|playlists.rocks|rencah.com|sarkarinaukry.com|seamanmemories.com|solnechnyj-kitaj.ru|thefoodstorydotcom.wpcomstaging.com|theorie-musik.de|topperpoint.com|vita-water.ru|googledrivelinks.com|ccthesims.com|papunika.com
+@@||ib.adnxs.com^$image,domain=plugincrack.com|buydekhke.com|isekaisubs.web.id|javhoho.com|udoyoshi.com|adrianoluis.net|animecast.net|armyranger.com|boxylucha.com|duniailkom.com|enciclopediaonline.com|eyalo.com|fotopixel.es|freeiphone.fr|ichberlin.com|indostarmedia.com|ireez.com|keepkoding.com|latribunadeautomocion.es|linemarlin.com|lumpiastudio.com|mobility.com.ng|mygardening411.com|newstvonline.com|organismes.org|papagiovannipaoloii.altervista.org|pictasty.com|playlists.rocks|rencah.com|sarkarinaukry.com|seamanmemories.com|solnechnyj-kitaj.ru|thefoodstorydotcom.wpcomstaging.com|theorie-musik.de|topperpoint.com|vita-water.ru|googledrivelinks.com|ccthesims.com|papunika.com
+@@||router.infolinks.com/dyn/apn-usync?$image,domain=plugincrack.com|buydekhke.com|isekaisubs.web.id|javhoho.com|udoyoshi.com|adrianoluis.net|animecast.net|armyranger.com|boxylucha.com|duniailkom.com|enciclopediaonline.com|eyalo.com|fotopixel.es|freeiphone.fr|ichberlin.com|indostarmedia.com|ireez.com|keepkoding.com|latribunadeautomocion.es|linemarlin.com|lumpiastudio.com|mobility.com.ng|mygardening411.com|newstvonline.com|organismes.org|papagiovannipaoloii.altervista.org|pictasty.com|playlists.rocks|rencah.com|sarkarinaukry.com|seamanmemories.com|solnechnyj-kitaj.ru|thefoodstorydotcom.wpcomstaging.com|theorie-musik.de|topperpoint.com|vita-water.ru|googledrivelinks.com|ccthesims.com|papunika.com
 @@||google-analytics.com/analytics.js$domain=plugincrack.com
 @@||googletagmanager.com/gtag/js$domain=plugincrack.com
 ! ai_front anti-adblock
-bi-girl.net,itbusiness.com.ua,wikirise.com,mejoresmodsminecraft.site,freebulksmsonline.com,freemagazines.top,ubuntudde.com,mettablog.com,secondlifetranslations.com,charbelnemnom.com,lowkeytech.com,pinayvids.com##[style*="cursor:"][style*="position: fixed;"][style*="z-index:"]
-@@||contextual.media.net/dmedianet.js$domain=bi-girl.net|itbusiness.com.ua|wikirise.com|mejoresmodsminecraft.site|freewebcart.com|wristreview.com|javnow.net|gcertificationcourse.com|pinayvids.com|secondlifetranslations.com|mettablog.com|freebulksmsonline.com|victor-mochere.com
-@@/ad-inserter*/*/*.js$domain=bi-girl.net|itbusiness.com.ua|wikirise.com|mejoresmodsminecraft.site|freewebcart.com|wristreview.com|javnow.net|gcertificationcourse.com|pinayvids.com|secondlifetranslations.com|mettablog.com|freebulksmsonline.com|victor-mochere.com
-@@/ad-inserter*/images/ads.png$domain=bi-girl.net|itbusiness.com.ua|wikirise.com|mejoresmodsminecraft.site|freewebcart.com|wristreview.com|javnow.net|gcertificationcourse.com|pinayvids.com|secondlifetranslations.com|mettablog.com|freebulksmsonline.com|victor-mochere.com
-@@||google-analytics.com/analytics.js$domain=bi-girl.net|itbusiness.com.ua|wikirise.com|mejoresmodsminecraft.site|freewebcart.com|javnow.net|freebulksmsonline.com|victor-mochere.com
-@@||ib.adnxs.com^$image,domain=bi-girl.net|itbusiness.com.ua|wikirise.com|mejoresmodsminecraft.site|freewebcart.com|javnow.net|gcertificationcourse.com|pinayvids.com|secondlifetranslations.com|mettablog.com|freebulksmsonline.com|victor-mochere.com
-@@||router.infolinks.com/dyn/apn-usync$image,domain=bi-girl.net|itbusiness.com.ua|wikirise.com|mejoresmodsminecraft.site|freewebcart.com|javnow.net|gcertificationcourse.com|pinayvids.com|secondlifetranslations.com|mettablog.com|freebulksmsonline.com|victor-mochere.com
+bi-girl.net,itbusiness.com.ua,wikirise.com,freebulksmsonline.com,freemagazines.top,ubuntudde.com,mettablog.com,secondlifetranslations.com,charbelnemnom.com,lowkeytech.com##[style*="cursor:"][style*="position: fixed;"][style*="z-index:"]
+@@||contextual.media.net/dmedianet.js$domain=bi-girl.net|itbusiness.com.ua|wikirise.com|freewebcart.com|wristreview.com|javnow.net|gcertificationcourse.com|secondlifetranslations.com|mettablog.com|freebulksmsonline.com|victor-mochere.com
+@@/ad-inserter*/*/*.js$domain=bi-girl.net|itbusiness.com.ua|wikirise.com|freewebcart.com|wristreview.com|javnow.net|gcertificationcourse.com|secondlifetranslations.com|mettablog.com|freebulksmsonline.com|victor-mochere.com
+@@/ad-inserter*/images/ads.png$domain=bi-girl.net|itbusiness.com.ua|wikirise.com|freewebcart.com|wristreview.com|javnow.net|gcertificationcourse.com|secondlifetranslations.com|mettablog.com|freebulksmsonline.com|victor-mochere.com
+@@||google-analytics.com/analytics.js$domain=bi-girl.net|itbusiness.com.ua|wikirise.com|freewebcart.com|javnow.net|freebulksmsonline.com|victor-mochere.com
+@@||ib.adnxs.com^$image,domain=bi-girl.net|itbusiness.com.ua|wikirise.com|freewebcart.com|javnow.net|gcertificationcourse.com|secondlifetranslations.com|mettablog.com|freebulksmsonline.com|victor-mochere.com
+@@||router.infolinks.com/dyn/apn-usync$image,domain=bi-girl.net|itbusiness.com.ua|wikirise.com|freewebcart.com|javnow.net|gcertificationcourse.com|secondlifetranslations.com|mettablog.com|freebulksmsonline.com|victor-mochere.com
 @@||bi-girl.net^$generichide
 @@||victor-mochere.com^$generichide
 @@||itbusiness.com.ua^$generichide
 @@||wikirise.com^$generichide
-@@||mejoresmodsminecraft.site^$generichide
+@@|^$generichide
 @@||freebulksmsonline.com^$generichide
 @@||mettablog.com^$generichide
 @@||secondlifetranslations.com^$generichide
-@@||pinayvids.com^$generichide
 @@||gcertificationcourse.com^$generichide
 gcertificationcourse.com###sticky-ad
 @@||javnow.net^$generichide
@@ -2157,7 +2130,7 @@ echo.msk.ru###main_bottom_2
 echo.msk.ru##.adf_sg_vstg2
 echo.msk.ru##.comments-ad
 ! https://github.com/AdguardTeam/AdguardFilters/issues/34823
-habermarmara.com.tr,murekkephaber.com,akdenizbulten.com,thecruiselife.com.tr,mansetizmir.com,denizliekspres.com.tr,izmirhabermerkezi.com,saatbasihaber.com,mahalligundem.com##img[alt="Reklam"]
+habermarmara.com.tr,murekkephaber.com,akdenizbulten.com,mansetizmir.com,denizliekspres.com.tr,izmirhabermerkezi.com,saatbasihaber.com,mahalligundem.com##img[alt="Reklam"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/30157
 reuters.com##body > div > div[class$=" "][style^="width: 100%; border: none;"]
 reuters.com##body > div > div[class$=" "][style^="width: 100%; border: none;"] + #spacerElement[style^="height:"]
@@ -2227,8 +2200,6 @@ uptobox.com##.ad-square
 kinopoisk.ru###brandingFlash
 kinopoisk.ru##.direct-kp-customize
 ||st.kp.yandex.net/images/bnnr/$domain=kinopoisk.ru
-! https://github.com/AdguardTeam/AdguardFilters/issues/2730
-on-movie.net##body > div[class^="skin-block_"][style^="background-image: url(data:image/jpeg;base64"]
 ! https://github.com/AdguardTeam/AdguardFilters/issues/2669
 bnonews.com##.adsbygoogle
 bnonews.com##.advertisement
@@ -2327,8 +2298,6 @@ m.sports.ru##iframe[src^="http://www.sports.ru/desktop/special/"]
 @@||boingboing.net/20*/*.html
 ! https://github.com/AdguardTeam/AdguardFilters/issues/89859
 @@||publicwww.com/ad/finance/
-! https://github.com/AdguardTeam/AdguardFilters/issues/88594
-@@||upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Doramad_Advertisement.jpg
 ! https://github.com/AdguardTeam/AdguardFilters/issues/79997
 @@||smashingmagazine.com/20*-ad-$~script,domain=smashingmagazine.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/79509

@@ -43,6 +43,10 @@ sport-express.ru,pikabu.ru##iframe[src^="https://autofill.yandex.ru/suggest?"]
 !
 ! SECTION: Popups - Regular rules
 !
+eda.yandex.ru##section > div[class]:has(> div[class] > button[aria-label="Promo"][style^="background-image:"])
+pachca.com##body > div.min-h-screen > div.animate-in:has(> div.bg-background > div.relative > div.items-left > img[alt="Таблица сравнения"])
+technopark.ru#%#//scriptlet('set-cookie', 'promo500closed', 'true')
+nemzetisport.hu##nso-petition-popup
 diviflash.com##.popup-container
 oddsportal.com#%#//scriptlet('set-session-storage-item', 'bonusIcon', 'false')
 comodo.com#$#.blogModalPopup { display: none !important; }
@@ -854,9 +858,9 @@ musicfab.ne.jp##.article-inquiry-outer:has(> div.article-inquiry > div.inq-box >
 musicfab.ne.jp##.float-recommend-box
 clashforwindows.org###elementor-popup-modal-144
 music.tower.jp##.promotion-modal
-auto-swiat.pl,theblaze.com#$#body > div.tp-modal:has(> div.tp-iframe-wrapper > iframe[id^="offer_"]) { display: none !important; }
-auto-swiat.pl,theblaze.com#$#.tp-backdrop { display: none !important; }
-auto-swiat.pl,theblaze.com#$#body.tp-modal-open { overflow: auto !important; }
+businessinsider.com.pl,auto-swiat.pl,theblaze.com#$#body > div.tp-modal:has(> div.tp-iframe-wrapper > iframe[id^="offer_"]) { display: none !important; }
+businessinsider.com.pl,auto-swiat.pl,theblaze.com#$#.tp-backdrop { display: none !important; }
+businessinsider.com.pl,auto-swiat.pl,theblaze.com#$#body.tp-modal-open { overflow: auto !important; }
 investing.com#%#//scriptlet('set-cookie', 'r_p_s_n', '1')
 404media.co###announcement-bar-root
 mental-navi.net##.c-flt-banner
@@ -2966,7 +2970,6 @@ wionews.com###livebtbox
 t.pia.jp###piacard_banner
 qwant.com###root > div.home__snippet__extension
 estadao.com.br##div[class^="box-urgente"][class$="-fixed"]
-estadao.com.br###house-ad-link
 emais.estadao.com.br##.article-softwall-banner
 pyimagesearch.com###pyis-cta-modal-sticky-bar > div.is-stuck
 bs.benefit-one.co.jp###meerkat-wrap
@@ -6497,7 +6500,7 @@ coachmag.co.uk,denofgeek.com##.block-dennis-newsletter
 sibnet.ru##.sibnet-notifications
 rasthaber.com##.notification-box
 photoshoplady.com##.wph-modal
-ajanskarabuk.com,duzcepusula.com,egepolitik.com,kulishaber.com.tr,gunedogushaber.com,saatbasihaber.com,izmirhabermerkezi.com,mahalligundem.com,ashaber.com,thecruiselife.com.tr,mansetizmir.com,denizliekspres.com.tr,banazguncelhaber.com,akdenizbulten.com,ankaraport.net,aksehirpostasi.com,ilerigazetem.com,oncusehir.com,kanalege.com.tr,turizmnews.com,ekonomidunya.com,spilhaber.com,marasnews.com,tokathaber.com.tr,yeniakcakocahaber.com,iskilipinsesi.com##.kosehbr
+ajanskarabuk.com,duzcepusula.com,egepolitik.com,kulishaber.com.tr,gunedogushaber.com,saatbasihaber.com,izmirhabermerkezi.com,mahalligundem.com,ashaber.com,mansetizmir.com,denizliekspres.com.tr,banazguncelhaber.com,akdenizbulten.com,ankaraport.net,aksehirpostasi.com,ilerigazetem.com,oncusehir.com,kanalege.com.tr,turizmnews.com,ekonomidunya.com,spilhaber.com,marasnews.com,tokathaber.com.tr,yeniakcakocahaber.com,iskilipinsesi.com##.kosehbr
 palitranews.az###exestylepopupdiv
 azertag.az##.notification-container
 evhayat.com,thejewishvoice.com,photoshoptutorials.ws###snppopup-welcome
@@ -7622,6 +7625,10 @@ kurashiru.com#$#html.dly-modal-active { overflow: auto !important; }
 ! SECTION: Popups - Mobile sites only
 !#if (adguard_app_android || adguard_app_ios || adguard_ext_android_cb || ext_ublock)
 !
+estadao.com.br#$##house-ad-link { display: none !important; }
+estadao.com.br#$#div[class^="styles__TopAndMainSiteContainer"] div.navbar-v3-content { top: 0 !important; }
+estadao.com.br#$#.bthQTE.menu-produtos-container-novo-site > div.container-fixed { top: 40px !important; }
+estadao.com.br#$#header > div[class^="styles__TopAndMainSiteContainer"] { padding-top: 0 !important; }
 sp.nicovideo.jp#$##jsAppModalWithLogin { display: none !important; }
 sp.nicovideo.jp#$#.is-fixed body:not(.player-horizontal):has(#jsAppModalWithLogin) { position: static !important; width: unset !important; }
 sp.nicovideo.jp#$#body.hdNoFixed.watch:has(#jsAppModalWithLogin) { padding-top: unset !important; overflow: auto !important; min-height: unset !important; }

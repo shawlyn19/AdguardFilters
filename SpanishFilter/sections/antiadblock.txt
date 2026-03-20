@@ -9,6 +9,8 @@
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/227346
+||outbound-proxy-us-east1-0-glob-usercontent-client-id-4143213601.googleapis.com.do/*/sweetalert
 ! https://github.com/AdguardTeam/AdguardFilters/issues/227120
 ||sushianimes.com.br/app/theme/assets/js/lazycore-ad.js
 sushianimes.com.br#%#//scriptlet('prevent-element-src-loading', 'script', 'pagead2.googlesyndication.com')
@@ -1311,9 +1313,6 @@ seriesdonghua.com,mundodonghua.com#%#//scriptlet("set-constant", "loadingAds", "
 ! https://github.com/AdguardTeam/AdguardFilters/issues/20092
 !+ PLATFORM(ios, ext_android_cb)
 @@||meutimao.com.br^$generichide
-! https://github.com/AdguardTeam/AdguardFilters/issues/19393
-!+ PLATFORM(ext_ff, ext_opera, ios, ext_android_cb, ext_ublock)
-@@||latornamesa.blogspot.com^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/19311
 @@||damelibros.com^$generichide
 ! https://github.com/AdguardTeam/AdguardFilters/issues/19151

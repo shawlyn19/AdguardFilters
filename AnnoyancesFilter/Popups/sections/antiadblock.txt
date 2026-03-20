@@ -669,7 +669,6 @@ armidaleexpress.com.au,bendigoadvertiser.com.au,canberratimes.com.au,centralwest
 ! The rules for content blockers only:
 ! LINK: AnnoyancesFilter/Popups/sections/antiadblock.txt#content_blockers
 !
-algumon.com##div[style^="display: flex; justify-content: center; align-items: center;"][style*="padding: 16px;"]
 komikcast.fit#%#//scriptlet('prevent-fetch', 'adsbygoogle')
 komikcast.fit##div[aria-label="Adblock notification"]
 omnisets.com#%#//scriptlet('set-cookie', 'adblockDismissed', 'true')
@@ -726,7 +725,7 @@ canakkalekalem.com#%#//scriptlet('trusted-set-local-storage-item', 'adblock_bann
 seelen.io##body > div[style^="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%;"]
 txori.com##body > div.cache
 txori.com#%#//scriptlet('prevent-addEventListener', 'DOMContentLoaded', 'aContainer')
-abdpost.com##div[x-data="adblockBanner()"]
+songelenhaber.com.tr,abdpost.com##div[x-data="adblockBanner()"]
 daido-h-ict.com#%#//scriptlet('prevent-addEventListener', 'load', 'detectAdBlock')
 comicschau.de###detect-modal
 pikuco.ru##.adbnotification
@@ -2069,7 +2068,7 @@ zkillboard.com###adsensetop
 ||good-surf.ru/*script/script.js
 ||googleads.g.doubleclick.net/pagead/$redirect=nooptext,important,domain=maxedtech.com
 ||googleads.g.doubleclick.net/pagead/ads$subdocument,redirect=noopframe,domain=thehouseofportable.com
-||googletagmanager.com/gtm.js$domain=popsci.com|saveur.com|denik.cz|ign.com|thehouseofportable.com
+||googletagmanager.com/gtm.js$domain=popsci.com|saveur.com|denik.cz|ign.com|thehouseofportable.com|xataka.com
 ||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=diep.io
 ||guhoyas.com/*/adblock-modal.js
 ||htlbid.com/*/motherjones.com/htlbid.js$script,redirect=noopjs,domain=motherjones.com,important
