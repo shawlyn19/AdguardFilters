@@ -12,8 +12,6 @@
 !+ NOT_OPTIMIZED PLATFORM(windows, mac, android, cli)
 ||geolocation.onetrust.com/cookieconsentpub/*/geo/location$xmlhttprequest,redirect-rule=noopjson
 !
-! https://github.com/AdguardTeam/AdguardFilters/issues/227338
-@@||careers.arcusfm.com/dist/js/gdpr/gdpr.js
 ! https://github.com/AdguardTeam/AdguardFilters/issues/227247
 @@||cdn.cookielaw.org/consent/*.json$domain=seriouseats.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/227038
@@ -623,8 +621,7 @@ omegawatches.com#@##notice-cookie-block
 ! https://github.com/AdguardTeam/AdguardFilters/issues/204690
 apps.dirittopratico.it#@##cookieChoiceInfo
 apps.dirittopratico.it#@##cookieinfo
-! https://github.com/AdguardTeam/AdguardFilters/issues/227342
-@@||cdn.cookielaw.org/consent/*.json$domain=metacritic.com
+! metacritic.com - videos not playing
 @@||geolocation.onetrust.com/cookieconsentpub/$domain=metacritic.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/204432
 otpbank.md#@#.cookie-panel:not(body):not(html)
