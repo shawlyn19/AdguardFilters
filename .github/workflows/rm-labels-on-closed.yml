@@ -1,5 +1,8 @@
 name: "Remove 'Unsorted' labels when the issue is closed"
 
+permissions:
+  issues: write
+
 on:
   issues:
     types: [closed]
@@ -9,7 +12,7 @@ jobs:
     if: ${{ github.repository == 'AdguardTeam/AdguardFilters' }}
     runs-on: ubuntu-slim
     steps:
-      - uses: actions/github-script@v8
+      - uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
