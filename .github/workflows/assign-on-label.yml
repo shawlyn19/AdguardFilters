@@ -1,5 +1,8 @@
 name: "Assign when the issue is labeled with 'A: In progress'"
 
+permissions:
+  issues: write
+
 on:
   issues:
     types: [labeled]
@@ -9,7 +12,7 @@ jobs:
     if: ${{ github.repository == 'AdguardTeam/AdguardFilters' }}
     runs-on: ubuntu-slim
     steps:
-      - uses: actions/github-script@v8
+      - uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
