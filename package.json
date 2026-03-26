@@ -3,6 +3,7 @@
     "author": "AdGuard Software Ltd.",
     "license": "GPL-3.0-only",
     "type": "module",
+    "//": "GHSA-c2c7-rcm5-vvqj, GHSA-3v7f-55p6-f55p, GHSA-v3rj-xjv7-4jmq, GHSA-48c2-rrv3-qjmp",
     "engines": {
         "node": ">=20.0.0"
     },
@@ -26,9 +27,17 @@
     },
     "devDependencies": {
         "@adguard/aglint": "4.0.0-beta.5",
-        "husky": "^9.1.7",
-        "lint-staged": "^16.3.2",
-        "markdownlint": "^0.40.0",
-        "markdownlint-cli": "^0.48.0"
+        "husky": "9.1.7",
+        "lint-staged": "16.3.2",
+        "markdownlint": "0.40.0",
+        "markdownlint-cli": "0.48.0"
+    },
+    "overrides": {
+        "picomatch": "4.0.4",
+        "smol-toml": "1.6.1",
+        "yaml": "2.8.3",
+        "micromatch": {
+            "picomatch": "2.3.2"
+        }
     }
 }
