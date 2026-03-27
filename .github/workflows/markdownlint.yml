@@ -1,5 +1,8 @@
 name: markdownlint
 
+permissions:
+  contents: read
+
 env:
   NODE_VERSION: 24
 
