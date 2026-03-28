@@ -3,7 +3,6 @@
     "author": "AdGuard Software Ltd.",
     "license": "GPL-3.0-only",
     "type": "module",
-    "//": "GHSA-f886-m6hf-6m8v (brace-expansion), GHSA-3v7f-55p6-f55p (picomatch), GHSA-c2c7-rcm5-vvqj (picomatch), GHSA-v3rj-xjv7-4jmq (smol-toml), GHSA-48c2-rrv3-qjmp (yaml)",
     "engines": {
         "node": ">=20.0.0"
     },
@@ -32,6 +31,7 @@
         "markdownlint": "0.40.0",
         "markdownlint-cli": "0.48.0"
     },
+    "//": "GHSA-f886-m6hf-6m8v (brace-expansion), GHSA-3v7f-55p6-f55p (picomatch), GHSA-c2c7-rcm5-vvqj (picomatch), GHSA-v3rj-xjv7-4jmq (smol-toml), GHSA-48c2-rrv3-qjmp (yaml)",
     "overrides": {
         "brace-expansion": "5.0.5",
         "picomatch": "4.0.4",
