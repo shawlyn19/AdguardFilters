@@ -1,0 +1,4 @@
+## 2025-05-15 - [Vulnerable transitive dependencies]
+**Vulnerability:** Transitive dependencies `picomatch`, `brace-expansion`, `smol-toml`, and `yaml` were found to be vulnerable to ReDoS and DoS attacks (GHSA-f886-m6hf-6m8v, GHSA-3v7f-55p6-f55p, GHSA-c2c7-rcm5-vvqj, GHSA-v3rj-xjv7-4jmq, GHSA-48c2-rrv3-qjmp).
+**Learning:** Even if direct dependencies are secure, transitive ones may still have vulnerabilities. `npm audit` is a key tool for discovery, but manual intervention through `overrides` in `package.json` is often required when parent packages don't update their dependencies.
+**Prevention:** Regularly run `npm audit` and use the `overrides` field in `package.json` to pin secure versions of transitive dependencies. Document the vulnerabilities addressed with GHSA IDs for better auditability.
