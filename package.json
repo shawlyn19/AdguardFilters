@@ -14,6 +14,7 @@
         "url": "https://github.com/AdguardTeam/AdguardFilters/issues"
     },
     "homepage": "https://github.com/AdguardTeam/AdguardFilters#readme",
+    "//": "Security fixes: GHSA-c2c7-rcm5-vvqj (picomatch), GHSA-3v7f-55p6-f55p (picomatch), GHSA-f886-m6hf-6m8v (brace-expansion), GHSA-v3rj-xjv7-4jmq (smol-toml), GHSA-48c2-rrv3-qjmp (yaml)",
     "scripts": {
         "aglint": "aglint --cache --cache-location .aglintcache --cache-strategy content \"**/*.txt\"",
         "markdownlint": "markdownlint .",
@@ -30,5 +31,14 @@
         "lint-staged": "^16.3.2",
         "markdownlint": "^0.40.0",
         "markdownlint-cli": "^0.48.0"
+    },
+    "overrides": {
+        "brace-expansion": "5.0.5",
+        "picomatch": "4.0.4",
+        "smol-toml": "1.6.1",
+        "yaml": "2.8.3",
+        "micromatch": {
+            "picomatch": "2.3.2"
+        }
     }
 }
