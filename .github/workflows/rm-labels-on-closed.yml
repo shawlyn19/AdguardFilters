@@ -1,5 +1,8 @@
 name: "Remove 'Unsorted' labels when the issue is closed"
 
+permissions:
+  issues: write
+
 on:
   issues:
     types: [closed]

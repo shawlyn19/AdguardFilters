@@ -1,5 +1,8 @@
 name: "Remove status labels and assignee when the issue is reopened"
 
+permissions:
+  issues: write
+
 on:
   issues:
     types: [reopened]
