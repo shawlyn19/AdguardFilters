@@ -64,7 +64,7 @@ jobs:
         )
       }}
     steps:
-      - uses: 8398a7/action-slack@3779082e573d93c12a270de1800c40bbd6bbf5d3 # v3
+      - uses: 8398a7/action-slack@v3
         with:
           status: failure
           fields: workflow, repo, message, commit, author, eventName, ref, job
